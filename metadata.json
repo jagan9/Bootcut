@@ -1,0 +1,6 @@
+{
+  "name": "BeatCut AI - Beat-Synced Video Studio",
+  "description": "AI-powered rhythmic video editing studio. Synchronize clips to musical transients and beat drops with millisecond precision.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

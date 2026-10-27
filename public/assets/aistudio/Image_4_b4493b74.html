@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#191b22", "on-secondary-fixed-variant": "#92002a", "on-secondary-container": "#ffc2c4", "surface-dim": "#111319", "on-primary-container": "#0d0096", "on-tertiary-fixed": "#000767", "surface-tint": "#c0c1ff", "on-primary-fixed": "#07006c", "surface-bright": "#373940", "outline-variant": "#464554", "tertiary-container": "#7c87f3", "error-container": "#93000a", "surface-container": "#1e1f26", "error": "#ffb4ab", "secondary-container": "#b50036", "primary": "#c0c1ff", "secondary-fixed": "#ffdadb", "on-primary-fixed-variant": "#2f2ebe", "on-tertiary": "#131e8c", "secondary": "#ffb2b7", "surface": "#111319", "primary-fixed-dim": "#c0c1ff", "on-error-container": "#ffdad6", "on-surface": "#e2e2eb", "inverse-on-surface": "#2e3037", "surface-container-lowest": "#0c0e14", "background": "#111319", "on-secondary-fixed": "#40000d", "inverse-primary": "#494bd6", "on-background": "#e2e2eb", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#ffb2b7", "surface-container-highest": "#33343b", "outline": "#908fa0", "surface-variant": "#33343b", "tertiary-fixed-dim": "#bdc2ff", "primary-container": "#8083ff", "primary-fixed": "#e1e0ff", "surface-container-high": "#282a30", "tertiary-fixed": "#e0e0ff", "tertiary": "#bdc2ff", "inverse-surface": "#e2e2eb", "on-tertiary-container": "#081486", "on-primary": "#1000a9", "on-secondary": "#67001b", "on-tertiary-fixed-variant": "#2f3aa3", "on-error": "#690005" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "space-3xl": "3rem", "space-2xs": "0.125rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-2xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-tablet": "1.5rem", "gutter": "1rem", "margin-desktop": "2rem" }, fontFamily: { "badge-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"] }, fontSize: { "badge-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-code-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-code-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go Back" class="min-h-[44px] min-w-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors active:scale-95" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="BeatCut Logo" class="h-7 w-auto object-contain flex-shrink-0 hidden sm:block" src="https://lh3.googleusercontent.com/aida/AEtjO1XWrPLTlat5Q3qRJgAO4nc2AvjkRo4YzRNF_zWnYx0kxsuQzUYRdVshBFpaVtqL-VLlWpGFqDDQOjKN0uCXOkuFn5mn1wCiLamDlSvRAHJoKaGmFJoT6nqe0ZAC5JGZPIisKYmA2msWnKecRA-EiWECNn5P4BiQRLLX345rwGDStNljdqAHQwZy0tBpRC4vRwgH7GCCOdeV9aTA48ehFU_BVQJgE2gTtmgnAdS9TIxp5WvC-W41vslBz_Y7"/><div class="flex flex-col min-w-0"><span class="font-title-md text-title-md font-semibold text-on-surface truncate tracking-tight">Timeline Studio</span><span class="font-label-code-sm text-label-code-sm text-tertiary truncate uppercase tracking-widest">BeatCut Studio</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden xs:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded-full shadow-[0_0_12px_rgba(128,131,255,0.12)]"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-code-sm text-label-code-sm text-on-surface">3 edits left</span></div><button aria-label="User Profile" class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKklERnzk6JB6pHiKu4rk9iB-GxWGqOU8kNZPJyh7KO4gCDdwveTRN8AYRK2UfaBzoOMc_FN2cJp7pzck7X8qahdTP7dv-oPTfo35gKLLFOgLj8go9MK1PCJYM6UqKWxNwUUEyLEYOD5_zvB9qnsshOJ4TEti7vTbldTfxeCCB86kJ3NMc18QbxHXie_tvxCG1fP6lKymcI0UNLgrR-SF_0q70zUv8tCfjktuiyfU7bISK68-Mmnie-g"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-safe">
+<!-- Subtle Top Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 w-80 h-32 bg-primary/10 blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute top-10 right-4 w-40 h-40 bg-secondary/10 blur-3xl pointer-events-none rounded-full"></div>
+<!-- Status Header Banner -->
+<div class="px-space-md pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded-full shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-code-sm text-label-code-sm text-primary uppercase tracking-wider font-semibold">Editing in Progress</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-tertiary">cloud_sync</span>
+<span class="font-label-code-sm text-label-code-sm font-medium">Cloud Rack 04</span>
+</div>
+</div>
+<div class="mt-1 flex items-baseline justify-between gap-2">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight font-bold truncate">Japan Summer Memories</h1>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant flex-shrink-0">6 Clips · 4K</span>
+</div>
+</div>
+<!-- Visual Interactive Hero Card (Audio Waveform + Video Preview Frame) -->
+<div class="px-space-md pt-space-xs pb-space-md">
+<div class="relative w-full rounded-xl bg-surface-container-low p-space-md overflow-hidden shadow-xl">
+<!-- Background Ambient Video Poster / Scrim -->
+<div class="relative w-full h-44 rounded-lg bg-surface-container-lowest overflow-hidden flex flex-col justify-between p-3 shadow-inner">
+<img class="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-luminosity scale-105 filter blur-[0.5px]" data-alt="Cinematic frame of a neon-lit Tokyo street after gentle summer rain, cinematic reflections on asphalt, deep indigo night aesthetic with vibrant magenta signage, hyper-detailed shallow depth of field shot on 35mm anamorphic lens with soft cinematic film grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdBRi_K1d4Ad0x2s4-qYPjlRRVMdsHky_6RGfvPF-k-wCPHBDe1pQMKn85PnRxXCxFnYPKTYX0_UUCUwieXaP7AxJBoqRGFCxMc4n7dnIzvrS6v6H3fauoFK6haeprtGDEWfLqfm7PXe28A7sJM_IyC47OiNn3Jm1qukgBxcNk1ZUfO5dEDN6_z5YxKTtwVOmlTHzfl2utzYeSZwX7Le14bGkKClI4R1PxEGOIV0nTYXNm2zfrXCVI_A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<!-- Top Overlay: Live AI Diagnostics Micro-Pills -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 bg-surface-dim/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-md">
+<span class="material-symbols-outlined text-[14px] text-secondary">graphic_eq</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface tracking-tight font-mono">128 BPM · Detected</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-dim/90 backdrop-blur-md px-2.5 py-1 rounded-full text-tertiary shadow-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">auto_fix_high</span>
+<span class="font-label-code-sm text-label-code-sm font-medium">Neural Cut v3</span>
+</div>
+</div>
+<!-- Center Visual: Glowing Beat Pulse Icon from the Brand Visual -->
+<div class="relative z-10 self-center my-auto flex flex-col items-center">
+<div class="relative flex items-center justify-center">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-high/90 backdrop-blur-xl flex items-center justify-center shadow-lg relative">
+<!-- Outer Neon Glow Ring -->
+<div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-primary to-secondary opacity-40 blur-sm animate-pulse"></div>
+<!-- Mini Beat SVG Icon -->
+<svg class="w-10 h-10 relative z-10 text-secondary" fill="none" viewbox="0 0 48 48">
+<rect height="36" rx="10" stroke="#8083ff" stroke-opacity="0.85" stroke-width="3" width="36" x="6" y="6"></rect>
+<path d="M6 24H16L20 15L25 33L30 20L34 24H42" stroke="#ffb2b7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path>
+<circle class="animate-ping" cx="23" cy="24" fill="#ffffff" r="2.5"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- Bottom Visual: Real-time Audio Waveform Visualizer -->
+<div class="relative z-10 flex flex-col gap-1 w-full">
+<div class="flex items-center justify-between text-on-surface-variant font-label-code-sm text-label-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">audiotrack</span>
+<span class="text-on-surface">Lost in Kyoto</span>
+</span>
+<span class="text-tertiary font-mono">00:18.42 / 00:32.00</span>
+</div>
+<!-- Waveform Canvas Mockup -->
+<div class="h-6 w-full flex items-end justify-between gap-[2px] pt-1">
+<span class="w-[3px] h-2 bg-primary/40 rounded-full"></span>
+<span class="w-[3px] h-3.5 bg-primary/50 rounded-full"></span>
+<span class="w-[3px] h-5 bg-primary/60 rounded-full"></span>
+<span class="w-[3px] h-2.5 bg-primary/50 rounded-full"></span>
+<span class="w-[3px] h-4 bg-primary rounded-full"></span>
+<span class="w-[3px] h-6 bg-secondary rounded-full shadow-[0_0_8px_#ffb2b7]"></span>
+<span class="w-[3px] h-3 bg-primary/70 rounded-full"></span>
+<span class="w-[3px] h-5.5 bg-primary rounded-full"></span>
+<span class="w-[3px] h-2 bg-primary/40 rounded-full"></span>
+<span class="w-[3px] h-4 bg-primary/80 rounded-full"></span>
+<span class="w-[3px] h-6 bg-secondary rounded-full shadow-[0_0_8px_#ffb2b7]"></span>
+<span class="w-[3px] h-3 bg-primary rounded-full"></span>
+<span class="w-[3px] h-2 bg-primary/60 rounded-full"></span>
+<span class="w-[3px] h-4.5 bg-primary/80 rounded-full"></span>
+<span class="w-[3px] h-5 bg-primary rounded-full"></span>
+<span class="w-[3px] h-6.5 bg-secondary rounded-full shadow-[0_0_8px_#ffb2b7]"></span>
+<span class="w-[3px] h-3 bg-primary/60 rounded-full"></span>
+<span class="w-[3px] h-2 bg-primary/40 rounded-full"></span>
+<span class="w-[3px] h-4 bg-primary/70 rounded-full"></span>
+<span class="w-[3px] h-5.5 bg-primary rounded-full"></span>
+<span class="w-[3px] h-2 bg-primary/50 rounded-full"></span>
+<span class="w-[3px] h-3.5 bg-primary/70 rounded-full"></span>
+<span class="w-[3px] h-6 bg-secondary rounded-full shadow-[0_0_8px_#ffb2b7]"></span>
+<span class="w-[3px] h-4 bg-primary/80 rounded-full"></span>
+<span class="w-[3px] h-2 bg-primary/40 rounded-full"></span>
+<span class="w-[3px] h-5 bg-primary rounded-full"></span>
+<span class="w-[3px] h-3 bg-primary/70 rounded-full"></span>
+<span class="w-[3px] h-2 bg-primary/40 rounded-full"></span>
+</div>
+</div>
+</div>
+<!-- Human friendly summary banner below visual -->
+<div class="mt-3 flex items-start gap-2.5 bg-surface-container p-2.5 rounded-lg">
+<div class="p-1 rounded-md bg-primary-container/20 text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">info</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            AI BeatCut engine is synchronizing your <span class="text-on-surface font-medium">6 clips</span> to <span class="text-on-surface font-medium">‘Lost in Kyoto’</span>. This usually takes 45–90 seconds on mobile cloud.
+          </p>
+</div>
+</div>
+</div>
+<!-- Realistic Stage Tracker -->
+<div class="px-space-md py-space-xs flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Pipeline Stages</h2>
+<span class="font-label-code-sm text-label-code-sm text-tertiary uppercase">Stage 4 of 7</span>
+</div>
+<!-- Stage Stepper Cards -->
+<div class="flex flex-col gap-2">
+<!-- Stage 1 (Completed) -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low transition-all">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Validating media files</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary">0.8s</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">6 source streams verified (H.265 / 4K 60fps)</span>
+</div>
+</div>
+<!-- Stage 2 (Completed) -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low transition-all">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Analyzing clips &amp; scene cuts</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary">3.2s</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">31 candidate action moments detected</span>
+</div>
+</div>
+<!-- Stage 3 (Completed) -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low transition-all">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Analyzing music &amp; beat points</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary">1.4s</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Transients locked to bass drops &amp; snares</span>
+</div>
+</div>
+<!-- Stage 4 (Active / In Progress) -->
+<div class="relative flex flex-col p-3.5 rounded-xl bg-surface-container-high shadow-lg overflow-hidden">
+<!-- Active Progress Accents -->
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-primary via-secondary to-primary animate-pulse"></div>
+<div class="flex items-start gap-3 pl-1">
+<div class="w-7 h-7 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5 relative shadow-sm">
+<span class="material-symbols-outlined text-[18px] animate-spin">sync</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Building edit &amp; matching beats</span>
+<span class="font-label-code-sm text-label-code-sm text-secondary uppercase font-semibold">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary mt-0.5 leading-snug">
+                Matching 14 video cut points to kick drums and chorus drops
+              </p>
+<!-- Live Micro Progress Segment -->
+<div class="mt-2.5 w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-3/5 transition-all duration-700 animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stage 5 (Upcoming) -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low/60 opacity-60">
+<div class="w-7 h-7 rounded-full bg-surface-container text-outline flex items-center justify-center flex-shrink-0 font-label-code-sm text-label-code-sm">
+            5
+          </div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Rendering &amp; color grading</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">Queued</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Applying 'Tokyo Neon' LUT preset</span>
+</div>
+</div>
+<!-- Stage 6 (Upcoming) -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low/60 opacity-50">
+<div class="w-7 h-7 rounded-full bg-surface-container text-outline flex items-center justify-center flex-shrink-0 font-label-code-sm text-label-code-sm">
+            6
+          </div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Quality check &amp; audio normalization</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">Pending</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">EBU R128 loudness conforming</span>
+</div>
+</div>
+<!-- Stage 7 (Upcoming Final) -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low/60 opacity-40">
+<div class="w-7 h-7 rounded-full bg-surface-container text-outline flex items-center justify-center flex-shrink-0 font-label-code-sm text-label-code-sm">
+            7
+          </div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Ready for preview</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">Final</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Instant scrubber playback in BeatCut Studio</span>
+</div>
+</div>
+</div>
+</div>
+<!-- User Action Controls Card -->
+<div class="px-space-md py-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col gap-2">
+<!-- Notify Me Button -->
+<button class="w-full min-h-[48px] bg-primary text-on-primary font-title-md text-title-md font-semibold rounded-xl flex items-center justify-center gap-2 shadow-lg transition-transform active:scale-[0.98]" id="notifyBtn">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<span>Notify me when ready</span>
+</button>
+<!-- Keep running in background Button -->
+<button class="w-full min-h-[48px] bg-surface-container-high text-on-surface font-title-md text-title-md font-medium rounded-xl flex items-center justify-center gap-2 shadow-sm hover:bg-surface-bright transition-all active:scale-[0.98]" id="backgroundBtn">
+<span class="material-symbols-outlined text-[20px] text-tertiary">open_in_new</span>
+<span>Keep running in background</span>
+</button>
+<!-- Cancel Job Trigger -->
+<button class="w-full py-2.5 text-error font-body-md text-body-md flex items-center justify-center gap-1.5 transition-colors hover:text-on-error-container" id="cancelPromptBtn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+<span>Cancel processing job</span>
+</button>
+</div>
+<!-- Prototype Disclaimer -->
+<div class="flex items-center justify-center gap-1.5 py-1 text-center">
+<span class="material-symbols-outlined text-[14px] text-outline">science</span>
+<span class="font-label-code-sm text-label-code-sm text-outline">Prototype demonstration state · Simulated cloud pipeline</span>
+</div>
+</div>
+</div>
+<!-- Confirmation Modal for Cancel (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-dim/80 backdrop-blur-sm hidden items-end sm:items-center justify-center p-space-md" id="cancelModal">
+<div class="w-full max-w-sm bg-surface-container p-space-lg rounded-2xl shadow-2xl flex flex-col gap-space-md transform transition-all">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Abort Beat Matching?</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cloud resources will be cleared immediately.</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Cancelling now will discard the current rhythmic synchronization cache for ‘Japan Summer Memories’.
+      </p>
+<div class="flex items-center gap-2">
+<button class="flex-1 min-h-[44px] bg-surface-container-high text-on-surface font-title-md text-title-md rounded-xl font-medium" id="dismissModalBtn">
+          Continue Job
+        </button>
+<button class="flex-1 min-h-[44px] bg-error-container text-error font-title-md text-title-md rounded-xl font-semibold" id="confirmCancelBtn">
+          Yes, Cancel
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Banner -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-surface-container-highest text-on-surface px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2 transition-all opacity-0 pointer-events-none translate-y-2" id="statusToast">
+<span class="material-symbols-outlined text-[18px] text-primary" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastText">Notification preferences saved!</span>
+</div>
+</div>
+<script>
+  (function() {
+    const notifyBtn = document.getElementById('notifyBtn');
+    const backgroundBtn = document.getElementById('backgroundBtn');
+    const cancelPromptBtn = document.getElementById('cancelPromptBtn');
+    const cancelModal = document.getElementById('cancelModal');
+    const dismissModalBtn = document.getElementById('dismissModalBtn');
+    const confirmCancelBtn = document.getElementById('confirmCancelBtn');
+    const statusToast = document.getElementById('statusToast');
+    const toastText = document.getElementById('toastText');
+    const toastIcon = document.getElementById('toastIcon');
+
+    function showToast(message, iconName) {
+      if (!statusToast) return;
+      toastText.textContent = message;
+      if (iconName && toastIcon) toastIcon.textContent = iconName;
+      statusToast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+      statusToast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        statusToast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+        statusToast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2600);
+    }
+
+    if (notifyBtn) {
+      let isNotified = false;
+      notifyBtn.addEventListener('click', () => {
+        isNotified = !isNotified;
+        if (isNotified) {
+          notifyBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">notifications_off</span><span>Notification enabled</span>';
+          showToast('Push alert set for preview readiness', 'notifications_active');
+        } else {
+          notifyBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">notifications_active</span><span>Notify me when ready</span>';
+          showToast('Push notifications muted', 'notifications_off');
+        }
+      });
+    }
+
+    if (backgroundBtn) {
+      backgroundBtn.addEventListener('click', () => {
+        showToast('Background rendering enabled. Returning...', 'check_circle');
+        setTimeout(() => {
+          if (window.history.length > 1) {
+            window.history.back();
+          }
+        }, 1000);
+      });
+    }
+
+    if (cancelPromptBtn && cancelModal) {
+      cancelPromptBtn.addEventListener('click', () => {
+        cancelModal.classList.remove('hidden');
+        cancelModal.classList.add('flex');
+      });
+    }
+
+    if (dismissModalBtn && cancelModal) {
+      dismissModalBtn.addEventListener('click', () => {
+        cancelModal.classList.add('hidden');
+        cancelModal.classList.remove('flex');
+      });
+    }
+
+    if (confirmCancelBtn && cancelModal) {
+      confirmCancelBtn.addEventListener('click', () => {
+        cancelModal.classList.add('hidden');
+        cancelModal.classList.remove('flex');
+        showToast('Job cancelled. Reverting workspace...', 'cancel');
+        setTimeout(() => {
+          if (window.history.length > 1) {
+            window.history.back();
+          }
+        }, 1200);
+      });
+    }
+  })();
+</script></main></body></html>

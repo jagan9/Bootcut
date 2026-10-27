@@ -1,0 +1,1729 @@
+<!-- BeatCut - Account Settings & Privacy -->
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#191b22", "on-secondary-fixed-variant": "#92002a", "on-secondary-container": "#ffc2c4", "surface-dim": "#111319", "on-primary-container": "#0d0096", "on-tertiary-fixed": "#000767", "surface-tint": "#c0c1ff", "on-primary-fixed": "#07006c", "surface-bright": "#373940", "outline-variant": "#464554", "tertiary-container": "#7c87f3", "error-container": "#93000a", "surface-container": "#1e1f26", "error": "#ffb4ab", "secondary-container": "#b50036", "primary": "#c0c1ff", "secondary-fixed": "#ffdadb", "on-primary-fixed-variant": "#2f2ebe", "on-tertiary": "#131e8c", "secondary": "#ffb2b7", "surface": "#111319", "primary-fixed-dim": "#c0c1ff", "on-error-container": "#ffdad6", "on-surface": "#e2e2eb", "inverse-on-surface": "#2e3037", "surface-container-lowest": "#0c0e14", "background": "#111319", "on-secondary-fixed": "#40000d", "inverse-primary": "#494bd6", "on-background": "#e2e2eb", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#ffb2b7", "surface-container-highest": "#33343b", "outline": "#908fa0", "surface-variant": "#33343b", "tertiary-fixed-dim": "#bdc2ff", "primary-container": "#8083ff", "primary-fixed": "#e1e0ff", "surface-container-high": "#282a30", "tertiary-fixed": "#e0e0ff", "tertiary": "#bdc2ff", "inverse-surface": "#e2e2eb", "on-tertiary-container": "#081486", "on-primary": "#1000a9", "on-secondary": "#67001b", "on-tertiary-fixed-variant": "#2f3aa3", "on-error": "#690005" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "space-3xl": "3rem", "space-2xs": "0.125rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-2xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-tablet": "1.5rem", "gutter": "1rem", "margin-desktop": "2rem" }, fontFamily: { "badge-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"] }, fontSize: { "badge-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-code-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-code-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="BeatCut Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XWrPLTlat5Q3qRJgAO4nc2AvjkRo4YzRNF_zWnYx0kxsuQzUYRdVshBFpaVtqL-VLlWpGFqDDQOjKN0uCXOkuFn5mn1wCiLamDlSvRAHJoKaGmFJoT6nqe0ZAC5JGZPIisKYmA2msWnKecRA-EiWECNn5P4BiQRLLX345rwGDStNljdqAHQwZy0tBpRC4vRwgH7GCCOdeV9aTA48ehFU_BVQJgE2gTtmgnAdS9TIxp5WvC-W41vslBz_Y7"><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface truncate">BeatCut</span><span class="font-badge-sm text-badge-sm text-primary uppercase bg-primary-container/20 px-space-xs py-0.5 rounded-full">AI</span></div><span class="font-label-code-sm text-label-code-sm text-on-surface-variant truncate uppercase tracking-wider">Home</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded-full shadow-[0_0_12px_rgba(128,131,255,0.12)]"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-on-surface">3 edits left</span></div><button aria-label="User Profile" class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKklERnzk6JB6pHiKu4rk9iB-GxWGqOU8kNZPJyh7KO4gCDdwveTRN8AYRK2UfaBzoOMc_FN2cJp7pzck7X8qahdTP7dv-oPTfo35gKLLFOgLj8go9MK1PCJYM6UqKWxNwUUEyLEYOD5_zvB9qnsshOJ4TEti7vTbldTfxeCCB86kJ3NMc18QbxHXie_tvxCG1fP6lKymcI0UNLgrR-SF_0q70zUv8tCfjktuiyfU7bISK68-Mmnie-g"></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md py-space-md gap-space-lg">
+<!-- Active Tab Syncer (Settings Tab) -->
+<script>
+    (function() {
+      const navLinks = document.querySelectorAll('nav a[data-path]');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'settings') {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('text-primary');
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.style.fontVariationSettings = "'FILL' 1";
+        } else {
+          link.classList.remove('text-primary');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    })();
+  </script>
+<!-- Profile & Plan Card -->
+<section class="flex flex-col gap-space-md bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Close-up professional studio portrait of Alex Rivera, creative film editor with confident warm gaze, subtle neon violet edge-light reflections, dark cinematic studio atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbehvmZnDHWVKqYxpFMKFhExuBb8ckP1ypX922AEZPGsCmmUdEKIjZheuWqAYqZK3ZzIsy4DK5V_C9TGX8YElxsR8dgw5RkwV5k3-2cL2RXe8ER8B5-FIKAHnJEOIX_NtTRJFpb36RRL6kgxh8acrlsrtnqZ0V2bGYxRg7EM0ir2n2SRGNB2Mr3V5CyHW9nUYKUs8ErgF-6X12IcT83Zzt-35QuG9CuR7tCjqCkmbWtr7yY6KFQRe7lg">
+<div class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Alex Rivera</h2>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<p class="font-label-code-sm text-label-code-sm text-on-surface-variant truncate">alex.rivera@creativepulse.io</p>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="font-badge-sm text-badge-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary">Free Tier</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">3/5 edits used</span>
+</div>
+</div>
+<button aria-label="Edit Profile Details" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full bg-surface-container-high transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+<!-- Upgrade Banner -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-high p-space-md shadow-md">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-[18px]">bolt</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">BeatCut Creator Pro</h3>
+<span class="font-badge-sm text-badge-sm text-secondary uppercase tracking-wider">Unrestricted Studio Access</span>
+</div>
+</div>
+<span class="font-label-code-md text-label-code-md text-primary font-bold">$12.99<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span></span>
+</div>
+<ul class="flex flex-col gap-1.5 my-space-sm">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">Ultra HD 4K 60fps cinematic renders</span>
+</li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">Unlimited neural beat-sync cuts &amp; zero watermarks</span>
+</li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="">50 GB Cloud Media Vault &amp; offline cache</span>
+</li>
+</ul>
+<button class="w-full min-h-[44px] mt-space-xs rounded-lg bg-primary text-on-primary font-title-md text-title-md font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" type="button">
+<span class="">Upgrade to Creator Pro</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Cloud Media Vault & Storage Quota -->
+<section class="flex flex-col gap-space-sm bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">cloud_sync</span>
+<h3 class="font-title-md text-title-md text-on-surface">Cloud Media Vault</h3>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">3.4 GB / 10 GB (34%)</span>
+</div>
+<!-- Progress Track -->
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 28%"></div>
+<div class="bg-secondary h-full" style="width: 6%"></div>
+</div>
+<!-- Breakdown Stats -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface truncate">18 Source Clips</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">2.8 GB</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary flex-shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface truncate">4 Exported Cuts</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">600 MB</span>
+</div>
+</div>
+</div>
+<!-- Vault Options -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<div class="flex items-center justify-between min-h-[44px] py-1">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<span class="font-body-md text-body-md text-on-surface">Auto-delete source clips</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Removes raw footage after 30 days</span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-0.5 flex items-center transition-colors flex-shrink-0" id="toggle-autodelete" role="switch">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-md transform translate-x-5 transition-transform"></div>
+</button>
+</div>
+<div class="flex items-center justify-between min-h-[44px] py-1">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<span class="font-body-md text-body-md text-on-surface">Clear Cached Renders</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Free up 420 MB local temporary preview cache</span>
+</div>
+<button class="min-h-[44px] px-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-code-sm text-label-code-sm flex items-center gap-1 active:scale-95 transition-transform flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[16px]">cleaning_services</span>
+<span class="">Clear</span>
+</button>
+</div>
+</div>
+</section>
+<!-- AI Beat-Sync & Processing Preferences -->
+<section class="flex flex-col gap-space-md bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h3 class="font-title-md text-title-md text-on-surface">AI Beat-Sync &amp; Processing</h3>
+</div>
+<!-- Sync Sensitivity Segmented Control -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Default Beat Transient Sensitivity</label>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-lowest p-1 rounded-xl" id="sensitivity-group">
+<button class="min-h-[40px] rounded-lg font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center justify-center transition-all" data-val="subtle" type="button">Subtle</button>
+<button class="min-h-[40px] rounded-lg font-label-code-sm text-label-code-sm bg-surface-container-high text-primary font-semibold shadow-sm flex items-center justify-center transition-all" data-val="balanced" type="button">Balanced</button>
+<button class="min-h-[40px] rounded-lg font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center justify-center transition-all" data-val="aggressive" type="button">Aggressive</button>
+</div>
+</div>
+<!-- Preferred Export Format -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Preferred Master Canvas Aspect</label>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low min-h-[44px]">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">crop_portrait</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">9:16 Vertical Reel</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Optimized for TikTok &amp; Shorts</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span>
+</div>
+</div>
+<!-- Processing Toggles -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between min-h-[44px] py-1">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<span class="font-body-md text-body-md text-on-surface">Cloud Processing Notifications</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Push alerts upon 4K render completion</span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-0.5 flex items-center transition-colors flex-shrink-0" id="toggle-notifications" role="switch">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-md transform translate-x-5 transition-transform"></div>
+</button>
+</div>
+<div class="flex items-center justify-between min-h-[44px] py-1">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<span class="font-body-md text-body-md text-on-surface">Haptic Beat Preview</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vibrate device on cut point transients</span>
+</div>
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-primary-container p-0.5 flex items-center transition-colors flex-shrink-0" id="toggle-haptics" role="switch">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest shadow-md transform translate-x-5 transition-transform"></div>
+</button>
+</div>
+</div>
+</section>
+<!-- Privacy & Data Ownership -->
+<section class="flex flex-col gap-space-md bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+<h3 class="font-title-md text-title-md text-on-surface">Privacy &amp; Data Ownership</h3>
+</div>
+<!-- Reassurance Banner -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Your raw footage and audio are processed inside encrypted, volatile memory buffers. <span class="text-on-surface font-medium">We never train public AI models on your personal media.</span>
+</p>
+</div>
+<!-- Data Actions -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full min-h-[44px] px-space-sm rounded-lg bg-surface-container-high text-on-surface font-body-md text-body-md flex items-center justify-between active:scale-[0.99] transition-transform" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">download_for_offline</span>
+<span class="">Download All Render Archives (ZIP)</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">3.4 GB</span>
+</button>
+<button class="w-full min-h-[44px] px-space-sm rounded-lg bg-surface-container-high text-on-surface font-body-md text-body-md flex items-center justify-between active:scale-[0.99] transition-transform" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">restart_alt</span>
+<span class="">Purge Temporary Media Buffer</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">chevron_right</span>
+</button>
+<button class="w-full min-h-[44px] px-space-sm rounded-lg bg-secondary-container/20 text-secondary font-body-md text-body-md flex items-center justify-between active:scale-[0.99] transition-transform" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+<span class="">Delete All Cloud Source Media</span>
+</div>
+<span class="font-badge-sm text-badge-sm uppercase px-1.5 py-0.5 rounded bg-secondary-container/40 text-on-secondary-container">Permanent</span>
+</button>
+</div>
+<!-- Danger Zone / Account Deletion -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+<span class="font-title-md text-title-md text-error">Account Termination</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Requesting account erasure permanently removes your profile, cloud renders, cut logs, and unlinks all synchronized royalty-free licenses immediately.
+      </p>
+<div class="p-space-sm rounded-lg bg-primary-container/20 border border-primary-container/30 flex flex-col gap-space-xs my-space-xs"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">history_toggle_off</span><span class="font-title-md text-title-md text-on-surface font-semibold">14-Day Recovery Grace Period</span></div><span class="font-badge-sm text-badge-sm px-2 py-0.5 rounded-full bg-primary/20 text-primary uppercase font-bold tracking-wider">Grace Period Active: 14 Days</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">When you schedule account deletion, your cloud renders and source media enter a 14-day retention lock before permanent wiping. You can cancel deletion anytime by logging back in within 14 days.</p></div><button id="open-delete-account-modal" class="mt-space-xs w-full min-h-[44px] rounded-lg bg-error-container text-on-error-container font-title-md text-title-md font-semibold flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform hover:opacity-90" type="button" aria-haspopup="dialog">
+<span class="material-symbols-outlined text-[18px]">person_remove</span>
+<span class="">Request Account &amp; Data Deletion</span>
+</button>
+</div>
+</section>
+<!-- Connected Platforms & Sync Licensing -->
+<section class="flex flex-col gap-space-md bg-surface-container rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<h3 class="font-title-md text-title-md text-on-surface">Connected Publishing Accounts</h3>
+</div>
+<span class="font-badge-sm text-badge-sm text-secondary bg-secondary-container/20 px-space-xs py-0.5 rounded-full">3 Linked</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- TikTok -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low min-h-[44px]">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[18px]">music_video</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">TikTok</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">@alex_rivera_cuts</span>
+</div>
+</div>
+<span class="font-badge-sm text-badge-sm text-primary bg-primary-container/20 px-2 py-0.5 rounded-full">Linked</span>
+</div>
+<!-- Instagram Reels -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low min-h-[44px]">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[18px]">photo_camera</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Instagram Reels</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">@rivera.creates</span>
+</div>
+</div>
+<span class="font-badge-sm text-badge-sm text-primary bg-primary-container/20 px-2 py-0.5 rounded-full">Linked</span>
+</div>
+<!-- YouTube Shorts -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low min-h-[44px]">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[18px]">smart_display</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">YouTube Shorts</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Alex Rivera Post</span>
+</div>
+</div>
+<span class="font-badge-sm text-badge-sm text-primary bg-primary-container/20 px-2 py-0.5 rounded-full">Linked</span>
+</div>
+</div>
+<!-- Music License Status -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">library_music</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Sync Music Licensing</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Royalty-Free Standard Sync Active</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</div>
+</section>
+<!-- App Info & Sign Out -->
+<section class="flex flex-col items-center gap-space-md py-space-sm">
+<button class="w-full min-h-[44px] rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md font-semibold flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-error text-[18px]">logout</span>
+<span class="text-error">Sign Out</span>
+</button>
+<div class="flex flex-col items-center gap-0.5">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">BeatCut Mobile Studio Engine v2.4.0 (Build 884)</span>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-code-sm text-label-code-sm">
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<span class="">•</span>
+<a class="hover:text-primary transition-colors" href="#">Security Audit</a>
+<span class="">•</span>
+<a class="hover:text-primary transition-colors" href="#">Support Vault</a>
+</div>
+</div>
+</section>
+<!-- Interactive Logic for Toggles & Segmented Controls -->
+<script>
+    (function() {
+      // Toggle Helper
+      function bindToggle(id) {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const isChecked = btn.getAttribute('aria-checked') === 'true';
+          const newState = !isChecked;
+          btn.setAttribute('aria-checked', String(newState));
+          const knob = btn.firstElementChild;
+          if (newState) {
+            btn.classList.remove('bg-surface-container-highest');
+            btn.classList.add('bg-primary-container');
+            knob.classList.add('translate-x-5');
+          } else {
+            btn.classList.remove('bg-primary-container');
+            btn.classList.add('bg-surface-container-highest');
+            knob.classList.remove('translate-x-5');
+          }
+        });
+      }
+
+      bindToggle('toggle-autodelete');
+      bindToggle('toggle-notifications');
+      bindToggle('toggle-haptics');
+
+      // Sensitivity Segmented Control
+      const group = document.getElementById('sensitivity-group');
+      if (group) {
+        const btns = group.querySelectorAll('button');
+        btns.forEach(b => {
+          b.addEventListener('click', () => {
+            btns.forEach(other => {
+              other.classList.remove('bg-surface-container-high', 'text-primary', 'font-semibold', 'shadow-sm');
+              other.classList.add('text-on-surface-variant');
+            });
+            b.classList.remove('text-on-surface-variant');
+            b.classList.add('bg-surface-container-high', 'text-primary', 'font-semibold', 'shadow-sm');
+          });
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="create" href="#"><div class="relative flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[20px] text-tertiary">auto_videocam</span></div><span class="font-label-code-sm text-label-code-sm mt-0.5">Create</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">video_library</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Settings</span></a></div></nav>
+
+<!-- Delete Account Confirmation Modal -->
+<div id="delete-account-modal" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-space-sm sm:p-space-md hidden">
+  <!-- Backdrop -->
+  <div id="delete-modal-backdrop" class="absolute inset-0 bg-surface-container-lowest/80 backdrop-blur-md transition-opacity"></div>
+  
+  <!-- Modal Dialog Content -->
+  <div class="relative w-full max-w-lg bg-surface-container rounded-xl border border-outline-variant/30 shadow-[0_8px_32px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col z-10 transition-all max-h-[90vh]">
+    <!-- Modal Header -->
+    <div class="flex items-center justify-between p-space-md bg-surface-container-low border-b border-outline-variant/20">
+      <div class="flex items-center gap-space-sm">
+        <div class="w-9 h-9 rounded-lg bg-secondary-container/30 text-secondary flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-[22px]">warning</span>
+        </div>
+        <div>
+          <h3 id="delete-modal-title" class="font-headline-sm text-title-md font-bold text-on-surface">Delete BeatCut Account?</h3>
+          <span class="font-label-code-sm text-label-code-sm text-secondary">Permanent &amp; Irreversible Action</span>
+        </div>
+      </div>
+      <button id="close-delete-modal-btn" aria-label="Close dialog" class="min-h-[44px] min-w-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-transform active:scale-95">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="p-space-md flex flex-col gap-space-md overflow-y-auto">
+      <!-- Warning Callout Box -->
+      <div class="p-space-sm rounded-lg bg-secondary-container/15 border border-secondary-container/30 flex flex-col gap-space-xs"><div class="flex items-center justify-between gap-space-xs"><p class="font-body-sm text-body-sm text-on-surface font-semibold">Termination request for <span class="text-secondary font-bold">alex.rivera@creativepulse.io</span></p><span class="font-badge-sm text-badge-sm px-2 py-0.5 rounded-full bg-primary-container/30 text-primary font-bold flex items-center gap-1 flex-shrink-0"><span class="material-symbols-outlined text-[14px]">schedule</span>14-Day Recovery Window Enabled</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Your account will be deactivated immediately, but your cloud assets will be held in encrypted cold storage for 14 days. If you log in before 14 days have passed, your projects, source media, and license keys can be fully restored. After 14 days, all data is permanently purged.</p></div>
+
+      <!-- Consequences List -->
+      <ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant bg-surface-container-lowest p-space-sm rounded-lg">
+        <li class="flex items-start gap-space-xs">
+          <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 flex-shrink-0">delete_forever</span>
+          <span class="">Erasure of all <strong>18 uploaded source clips (2.8 GB)</strong> and <strong>4 rendered cuts (600 MB)</strong> from Cloud Media Vault.</span>
+        </li>
+        <li class="flex items-start gap-space-xs">
+          <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 flex-shrink-0">music_off</span>
+          <span class="">Revocation of royalty-free sync licenses and custom beat maps.</span>
+        </li>
+        <li class="flex items-start gap-space-xs">
+          <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 flex-shrink-0">cancel</span>
+          <span class="">Immediate cancellation of any pending background render jobs.</span>
+        </li>
+        <li class="flex items-start gap-space-xs">
+          <span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 flex-shrink-0">account_box</span>
+          <span class="">Irreversible deletion of Alex Rivera's editor profile and cut timeline histories.</span>
+        </li>
+      </ul>
+
+      <!-- Confirmation Verification Input -->
+      <div class="flex flex-col gap-space-xs">
+        <label for="delete-confirm-input" class="font-label-code-sm text-label-code-sm text-on-surface">
+          Type <span class="text-secondary font-bold font-label-code-md">DELETE</span> to confirm:
+        </label>
+        <input id="delete-confirm-input" type="text" placeholder="DELETE" autocomplete="off" class="w-full min-h-[44px] px-space-sm rounded-lg bg-surface-container-high border border-outline-variant/40 text-on-surface font-label-code-md text-label-code-md placeholder:text-outline focus:outline-none focus:border-secondary transition-colors">
+      </div>
+
+      <!-- Checkbox Acknowledgment -->
+      <label class="flex items-start gap-space-xs cursor-pointer select-none">
+        <input id="delete-acknowledgment-check" type="checkbox" class="mt-0.5 rounded border-outline-variant bg-surface-container-high text-secondary focus:ring-0 w-4 h-4 accent-secondary-container">
+        <span class="font-body-sm text-body-sm text-on-surface-variant leading-snug">I understand that my account will enter a 14-day recovery hold before permanent purge, and can only be restored by logging back in during this window.</span>
+      </label>
+    </div>
+
+    <!-- Modal Footer Actions -->
+    <div class="p-space-md bg-surface-container-low border-t border-outline-variant/20 flex flex-col-reverse sm:flex-row gap-space-sm items-center justify-end">
+      <button id="cancel-delete-modal-btn" type="button" class="w-full sm:w-auto min-h-[44px] px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-body-md font-semibold transition-transform active:scale-95">
+        Keep Account
+      </button>
+      <button id="confirm-delete-account-btn" type="button" disabled="" class="w-full sm:w-auto min-h-[44px] px-space-md rounded-lg bg-error-container text-on-error-container font-title-md text-body-md font-bold flex items-center justify-center gap-space-xs opacity-40 cursor-not-allowed transition-all active:scale-95">
+        <span class="material-symbols-outlined text-[18px]">delete_forever</span>
+        <span id="confirm-btn-label" class="">Schedule Deletion (14-Day Hold)</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script class="">
+  (function() {
+    const openBtn = document.getElementById('open-delete-account-modal');
+    const modal = document.getElementById('delete-account-modal');
+    const backdrop = document.getElementById('delete-modal-backdrop');
+    const closeBtn = document.getElementById('close-delete-modal-btn');
+    const cancelBtn = document.getElementById('cancel-delete-modal-btn');
+    const confirmBtn = document.getElementById('confirm-delete-account-btn');
+    const inputConfirm = document.getElementById('delete-confirm-input');
+    const checkConfirm = document.getElementById('delete-acknowledgment-check');
+    const confirmLabel = document.getElementById('confirm-btn-label');
+
+    function openModal() {
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      if (inputConfirm) inputConfirm.value = '';
+      if (checkConfirm) checkConfirm.checked = false;
+      updateDeleteButtonState();
+      setTimeout(() => { if (inputConfirm) inputConfirm.focus(); }, 100);
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.add('hidden');
+      if (inputConfirm) inputConfirm.value = '';
+      if (checkConfirm) checkConfirm.checked = false;
+      updateDeleteButtonState();
+    }
+
+    function updateDeleteButtonState() {
+      if (!confirmBtn) return;
+      const textValid = inputConfirm && inputConfirm.value.trim().toUpperCase() === 'DELETE';
+      const checkValid = checkConfirm && checkConfirm.checked;
+      const isValid = textValid && checkValid;
+
+      if (isValid) {
+        confirmBtn.disabled = false;
+        confirmBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+        confirmBtn.classList.add('hover:opacity-90', 'cursor-pointer');
+      } else {
+        confirmBtn.disabled = true;
+        confirmBtn.classList.add('opacity-40', 'cursor-not-allowed');
+        confirmBtn.classList.remove('hover:opacity-90', 'cursor-pointer');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+
+    if (inputConfirm) inputConfirm.addEventListener('input', updateDeleteButtonState);
+    if (checkConfirm) checkConfirm.addEventListener('change', updateDeleteButtonState);
+
+    if (confirmBtn) {
+      confirmBtn.addEventListener('click', function() {
+        if (confirmBtn.disabled) return;
+        confirmBtn.disabled = true;
+        confirmLabel.textContent = 'Erasing Data...';
+        confirmBtn.classList.add('opacity-75');
+        setTimeout(function() {
+          confirmLabel.textContent = 'Account Erased';
+          setTimeout(function() {
+            closeModal();
+            confirmLabel.textContent = 'Permanently Delete Account';
+            alert('Account erasure request submitted. You have been scheduled for deletion.');
+          }, 800);
+        }, 1200);
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  })();
+</script></body></html>
+
+<!-- BeatCut - Sign In -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#081486", "secondary": "#ffb2b7", "surface-container-high": "#282a30", "on-error-container": "#ffdad6", "outline": "#908fa0", "tertiary-fixed-dim": "#bdc2ff", "tertiary-fixed": "#e0e0ff", "on-primary-fixed-variant": "#2f2ebe", "on-background": "#e2e2eb", "surface-bright": "#373940", "primary": "#c0c1ff", "primary-container": "#8083ff", "secondary-container": "#b50036", "inverse-surface": "#e2e2eb", "tertiary": "#bdc2ff", "surface-variant": "#33343b", "surface-dim": "#111319", "secondary-fixed-dim": "#ffb2b7", "on-primary": "#1000a9", "surface-tint": "#c0c1ff", "on-tertiary-fixed": "#000767", "on-primary-fixed": "#07006c", "on-primary-container": "#0d0096", "on-secondary-fixed-variant": "#92002a", "on-secondary-fixed": "#40000d", "on-secondary": "#67001b", "on-error": "#690005", "error": "#ffb4ab", "on-tertiary": "#131e8c", "primary-fixed-dim": "#c0c1ff", "surface-container-highest": "#33343b", "surface-container": "#1e1f26", "error-container": "#93000a", "on-surface": "#e2e2eb", "on-tertiary-fixed-variant": "#2f3aa3", "surface-container-lowest": "#0c0e14", "outline-variant": "#464554", "background": "#111319", "tertiary-container": "#7c87f3", "inverse-on-surface": "#2e3037", "primary-fixed": "#e1e0ff", "inverse-primary": "#494bd6", "surface-container-low": "#191b22", "secondary-fixed": "#ffdadb", "surface": "#111319", "on-surface-variant": "#c7c4d7", "on-secondary-container": "#ffc2c4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "3rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-md": "0.75rem", "space-xl": "1.5rem", "space-2xs": "0.125rem", "gutter": "1rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-2xl": "2rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "headline-lg-mobile": ["Plus Jakarta Sans"], "badge-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "label-code-md": ["13px", {"lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-code-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "badge-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>@layer base{html,body{width:100vw;min-height:100vh;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><button aria-label="Go back or close" class="min-w-[44px] min-h-[44px] -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#ffb2b7]"></div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">BeatCut</span><span class="px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-code-sm text-label-code-sm uppercase">AI</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter pb-space-2xl">
+<!-- Dynamic Ambient Glow behind Welcome Header -->
+<div class="relative w-full pt-space-md pb-space-lg flex flex-col items-center text-center">
+<div class="absolute -top-6 w-56 h-36 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -top-2 -right-8 w-36 h-28 bg-secondary/10 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<!-- Status / Studio Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-container-high shadow-sm mb-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_8px_#ffb2b7] animate-pulse"></span>
+<span class="font-label-code-sm text-label-code-sm text-primary uppercase tracking-wider">Cloud Engine v2.4 Active</span>
+</div>
+<!-- Punchy Titles (No redundant app name) -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mb-space-xs">
+      Sign in to your creative studio
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+      Access your AI-synced timelines, acoustic cut points, and secure render vault.
+    </p>
+</div>
+<!-- Studio Snapshot Micro-Hero (Proof of sync work) -->
+<div class="w-full mb-space-lg p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-12 h-12 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="High tech cinematic music video editing preview screen with neon ultraviolet timeline transients and dark grading monitors in a professional sound studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR8Ej-i4yAsVrjBL2tjtfRGmumY-sJFvd3Lu81L7iJ0zup_4iVghcMkvRAIUSW93jdV0Tko6AX0A6Pl6Fe7stji0HX1B0csCPuIq-2b6SvJfcD4-KyKnbJekCBaUACZgbS7e4bjvw5MEotzirzEjSx_XSQCKX9SzJr0d34Ld_Wgfd8ElUmvJuYq8S_f6FFwIqadPKeSo5itNwMDmVLxaseb6tvetnm_lOaGSyC6cV7sk2GJXrHzyYmeA"/>
+<div class="absolute bottom-0 inset-x-0 h-1 bg-secondary shadow-[0_0_6px_#ffb2b7]"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface truncate">Tokyo_Neon_Cut_4K</span>
+<span class="font-badge-sm text-badge-sm px-space-2xs py-0.5 rounded bg-primary-container text-on-primary-container uppercase">Auto-Saved</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-outline truncate">Render pending: 12 beat markers ready</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 ml-space-xs" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+</div>
+<!-- Main Authentication Form Card -->
+<div class="w-full bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<!-- Email Input Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-md text-title-md text-on-surface flex items-center justify-between" for="signin-email">
+<span>Creator Email</span>
+<span class="font-body-sm text-body-sm text-outline hidden" id="email-hint">Validating...</span>
+</label>
+<div class="relative flex items-center rounded-lg bg-surface-container-lowest focus-within:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">mail</span>
+<input autocomplete="email" class="w-full bg-transparent pl-11 pr-space-md py-3.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="signin-email" name="email" placeholder="alex@creator.io" type="email"/>
+<button aria-label="Clear email input" class="absolute right-space-sm p-1 rounded-full text-outline hover:text-on-surface hidden" id="clear-email-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Password Input Field -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface" for="signin-password">Master Password</label>
+</div>
+<div class="relative flex items-center rounded-lg bg-surface-container-lowest focus-within:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">lock</span>
+<input autocomplete="current-password" class="w-full bg-transparent pl-11 pr-12 py-3.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="signin-password" name="password" placeholder="••••••••••••" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-sm p-1 rounded-full text-outline hover:text-on-surface transition-colors flex items-center justify-center min-w-[36px] min-h-[36px]" id="toggle-password-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="password-eye-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me & Forgot Password -->
+<div class="flex items-center justify-between pt-space-2xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="remember-me" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-lowest peer-checked:bg-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-on-primary-container opacity-0 peer-checked:opacity-100 transition-opacity font-bold">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Remember this device</span>
+</label>
+<a class="font-body-sm text-body-sm text-primary hover:underline transition-all" href="#forgot">
+        Forgot password?
+      </a>
+</div>
+<!-- Primary Sign In CTA Button -->
+<button class="mt-space-xs w-full min-h-[48px] py-3.5 px-space-lg rounded-xl bg-primary hover:bg-primary-fixed-dim active:scale-[0.99] text-on-primary font-title-md text-title-md flex items-center justify-center gap-space-xs transition-transform shadow-lg shadow-primary/20" id="submit-signin-btn" type="button">
+<span>Sign In to BeatCut</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Visual Waveform Line Separator -->
+<div class="relative flex items-center justify-center my-space-xs">
+<div class="w-full h-0.5 bg-surface-container-high"></div>
+<span class="absolute px-space-sm bg-surface-container font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">
+        or continue with
+      </span>
+</div>
+<!-- Social Authentication Mosaics -->
+<div class="grid grid-cols-3 gap-space-sm w-full">
+<!-- Apple -->
+<button class="min-h-[44px] py-space-sm px-space-xs rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex flex-col items-center justify-center gap-1 transition-colors group" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface group-hover:scale-110 transition-transform">phone_iphone</span>
+<span class="font-badge-sm text-badge-sm text-on-surface-variant">Apple</span>
+</button>
+<!-- Google -->
+<button class="min-h-[44px] py-space-sm px-space-xs rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex flex-col items-center justify-center gap-1 transition-colors group" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:scale-110 transition-transform">g_mobiledata</span>
+<span class="font-badge-sm text-badge-sm text-on-surface-variant">Google</span>
+</button>
+<!-- Creator Suite / TikTok & YT -->
+<button class="min-h-[44px] py-space-sm px-space-xs rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface flex flex-col items-center justify-center gap-1 transition-colors group" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:scale-110 transition-transform">smart_display</span>
+<span class="font-badge-sm text-badge-sm text-on-surface-variant">Creator ID</span>
+</button>
+</div>
+</div>
+<!-- Trust, Privacy & Encryption Seal -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface mb-0.5">Zero-Knowledge Transient Vault</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Your uncompressed raw clips and synced tracks are end-to-end encrypted during timeline processing.
+      </p>
+</div>
+</div>
+<!-- Sign Up Prompt Footer -->
+<div class="w-full mt-space-xl flex flex-col items-center text-center gap-space-xs">
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Don't have an account yet?
+    </p>
+<a class="inline-flex items-center gap-space-2xs font-title-md text-title-md text-primary hover:text-tertiary transition-colors" href="#signup">
+<span>Sign up free for 500 AI credits</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</a>
+</div>
+<!-- Active Session Indicator Badge -->
+<div class="mt-space-lg flex items-center justify-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-code-sm text-label-code-sm text-outline">BeatSync Node US-WEST-01 Connected</span>
+</div>
+</div>
+<script>
+  (function() {
+    const passwordInput = document.getElementById('signin-password');
+    const togglePasswordBtn = document.getElementById('toggle-password-btn');
+    const passwordEyeIcon = document.getElementById('password-eye-icon');
+    const emailInput = document.getElementById('signin-email');
+    const clearEmailBtn = document.getElementById('clear-email-btn');
+    const submitBtn = document.getElementById('submit-signin-btn');
+    const emailHint = document.getElementById('email-hint');
+
+    // Toggle password visibility
+    if (togglePasswordBtn && passwordInput && passwordEyeIcon) {
+      togglePasswordBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isPassword = passwordInput.getAttribute('type') === 'password';
+        passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+        passwordEyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+      });
+    }
+
+    // Email clear and reactive helper state
+    if (emailInput && clearEmailBtn && emailHint) {
+      emailInput.addEventListener('input', function() {
+        if (emailInput.value.length > 0) {
+          clearEmailBtn.classList.remove('hidden');
+          if (emailInput.value.includes('@') && emailInput.value.includes('.')) {
+            emailHint.textContent = 'Account found';
+            emailHint.classList.remove('hidden', 'text-outline');
+            emailHint.classList.add('text-secondary');
+          } else {
+            emailHint.textContent = 'Validating...';
+            emailHint.classList.remove('hidden', 'text-secondary');
+            emailHint.classList.add('text-outline');
+          }
+        } else {
+          clearEmailBtn.classList.add('hidden');
+          emailHint.classList.add('hidden');
+        }
+      });
+
+      clearEmailBtn.addEventListener('click', function() {
+        emailInput.value = '';
+        clearEmailBtn.classList.add('hidden');
+        emailHint.classList.add('hidden');
+        emailInput.focus();
+      });
+    }
+
+    // Micro interactive submit state
+    if (submitBtn) {
+      submitBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const originalContent = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Syncing Session...</span>';
+        submitBtn.setAttribute('disabled', 'true');
+        submitBtn.classList.add('opacity-80');
+
+        setTimeout(function() {
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Studio Ready!</span>';
+          submitBtn.classList.replace('bg-primary', 'bg-tertiary-container');
+          
+          setTimeout(function() {
+            submitBtn.innerHTML = originalContent;
+            submitBtn.removeAttribute('disabled');
+            submitBtn.classList.remove('opacity-80');
+            submitBtn.classList.replace('bg-tertiary-container', 'bg-primary');
+          }, 1400);
+        }, 1100);
+      });
+    }
+  })();
+</script></main></body></html>
+
+<!-- BeatCut - Forgot Password -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#081486", "secondary": "#ffb2b7", "surface-container-high": "#282a30", "on-error-container": "#ffdad6", "outline": "#908fa0", "tertiary-fixed-dim": "#bdc2ff", "tertiary-fixed": "#e0e0ff", "on-primary-fixed-variant": "#2f2ebe", "on-background": "#e2e2eb", "surface-bright": "#373940", "primary": "#c0c1ff", "primary-container": "#8083ff", "secondary-container": "#b50036", "inverse-surface": "#e2e2eb", "tertiary": "#bdc2ff", "surface-variant": "#33343b", "surface-dim": "#111319", "secondary-fixed-dim": "#ffb2b7", "on-primary": "#1000a9", "surface-tint": "#c0c1ff", "on-tertiary-fixed": "#000767", "on-primary-fixed": "#07006c", "on-primary-container": "#0d0096", "on-secondary-fixed-variant": "#92002a", "on-secondary-fixed": "#40000d", "on-secondary": "#67001b", "on-error": "#690005", "error": "#ffb4ab", "on-tertiary": "#131e8c", "primary-fixed-dim": "#c0c1ff", "surface-container-highest": "#33343b", "surface-container": "#1e1f26", "error-container": "#93000a", "on-surface": "#e2e2eb", "on-tertiary-fixed-variant": "#2f3aa3", "surface-container-lowest": "#0c0e14", "outline-variant": "#464554", "background": "#111319", "tertiary-container": "#7c87f3", "inverse-on-surface": "#2e3037", "primary-fixed": "#e1e0ff", "inverse-primary": "#494bd6", "surface-container-low": "#191b22", "secondary-fixed": "#ffdadb", "surface": "#111319", "on-surface-variant": "#c7c4d7", "on-secondary-container": "#ffc2c4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "3rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-md": "0.75rem", "space-xl": "1.5rem", "space-2xs": "0.125rem", "gutter": "1rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-2xl": "2rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "headline-lg-mobile": ["Plus Jakarta Sans"], "badge-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "label-code-md": ["13px", {"lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-code-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "badge-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>@layer base{html,body{width:100vw;min-height:100vh;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><button aria-label="Go back or close" class="min-w-[44px] min-h-[44px] -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#ffb2b7]"></div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">BeatCut</span><span class="px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-code-sm text-label-code-sm uppercase">AI</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter pb-space-2xl">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden flex flex-col items-center">
+<div class="absolute -top-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-10 right-2 w-36 h-36 bg-secondary/15 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Visual Shield Badge with Illuminated Halo -->
+<div class="relative mt-space-lg mb-space-xl flex items-center justify-center">
+<div class="absolute w-24 h-24 rounded-full bg-primary/20 blur-xl animate-pulse"></div>
+<div class="relative w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center shadow-xl shadow-surface-container-lowest">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[36px]" style="font-variation-settings: 'FILL' 1;">lock_reset</span>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-secondary-container text-[14px]">bolt</span>
+</div>
+</div>
+</div>
+<!-- Header Copy -->
+<div class="text-center w-full max-w-sm px-space-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Reset your password</h1>
+<p class="mt-space-xs font-body-md text-body-md text-on-surface-variant">
+        Enter your registered email address and we'll send you a secure 6-digit verification code to recover your account.
+      </p>
+</div>
+</div>
+<!-- Form Container -->
+<div class="mt-space-xl w-full">
+<!-- Form Card -->
+<form class="flex flex-col gap-space-lg" id="reset-form" onsubmit="event.preventDefault(); handleSendCode();">
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-md text-title-md text-on-surface flex items-center justify-between" for="recovery-email">
+<span>Studio Account Email</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary">NLE PROFILE</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">mail</span>
+<input class="w-full h-12 pl-11 pr-space-md bg-surface-container-high text-on-surface placeholder:text-outline font-body-md text-body-md rounded-xl shadow-inner focus:outline-none focus:bg-surface-variant transition-colors" id="recovery-email" name="email" placeholder="editor@studio.com" required="" type="email" value="alex.rivera@creativepulse.io"/>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Must match the email associated with your BeatCut studio profile.</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-space-sm active:scale-[0.98] transition-transform shadow-lg shadow-surface-container-lowest" id="send-code-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Send Reset Code</span>
+</button>
+</form>
+<!-- Success Confirmation State (Hidden initially) -->
+<div class="hidden flex-col gap-space-md bg-surface-container-high p-space-lg rounded-2xl shadow-xl mt-space-md" id="success-state">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[20px]">mark_email_read</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface">Code Dispatched!</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+            Verification email sent to <span class="font-label-code-md text-label-code-md text-tertiary" id="target-email">alex.rivera@creativepulse.io</span>
+</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">CODE EXPIRES IN</span>
+</div>
+<span class="font-label-code-md text-label-code-md text-secondary" id="countdown">14:59</span>
+</div>
+<div class="flex gap-space-sm">
+<button class="flex-1 h-10 rounded-lg bg-surface-variant text-on-surface font-title-md text-title-md flex items-center justify-center gap-space-xs active:bg-surface-bright" onclick="resetDemoView()">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Email</span>
+</button>
+<button class="flex-1 h-10 rounded-lg bg-surface-variant text-primary font-title-md text-title-md flex items-center justify-center gap-space-xs active:bg-surface-bright" id="resend-btn" onclick="triggerResend()">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span id="resend-text">Resend</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recovery Roadmap / Instruction Pills -->
+<div class="mt-space-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">Recovery Process</span>
+<span class="font-badge-sm text-badge-sm text-primary uppercase">3-STEP SAFETY CHECK</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- Step 1 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary font-label-code-md text-label-code-md flex items-center justify-center shrink-0">
+          01
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Check your inbox for security code</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6-digit alphanumeric token generated via hardware encryption.</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary font-label-code-md text-label-code-md flex items-center justify-center shrink-0">
+          02
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Enter code &amp; choose new strong password</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Minimum 8 characters with multi-factor passkey option.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary font-label-code-md text-label-code-md flex items-center justify-center shrink-0">
+          03
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Regain access to your cuts &amp; cloud vault</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Timeline autosaves, AI render caches, and stems stay pristine.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Reassurance Notice Callout -->
+<div class="mt-space-lg p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-space-2xs">shield</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      For your security, reset links expire after 15 minutes. Source clips and stored cuts remain safely locked.
+    </p>
+</div>
+<!-- Alternative Option Card: Support Hold -->
+<div class="mt-space-lg p-space-md bg-surface-container rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">help</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Need help recovering an account?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">In 14-day deletion hold or 2FA locked</span>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-space-xs rounded-lg bg-surface-variant text-primary font-body-sm text-body-sm active:bg-surface-bright flex items-center gap-space-2xs" onclick="alert('Routing to BeatCut 24/7 Creator Priority Desk')" type="button">
+<span>Contact Support</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Bottom Back Navigation Link -->
+<div class="mt-space-xl flex items-center justify-center">
+<button class="font-title-md text-title-md text-primary hover:text-tertiary flex items-center gap-space-xs py-space-xs px-space-md rounded-full active:bg-surface-container transition-colors" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Remembered your password? Back to Sign In</span>
+</button>
+</div>
+</div>
+<script>
+  let countdownTimer;
+
+  function handleSendCode() {
+    const emailInput = document.getElementById('recovery-email');
+    const targetEmail = document.getElementById('target-email');
+    const form = document.getElementById('reset-form');
+    const successCard = document.getElementById('success-state');
+
+    if (!emailInput.value) return;
+
+    targetEmail.textContent = emailInput.value;
+    form.classList.add('hidden');
+    successCard.classList.remove('hidden');
+
+    startCountdown();
+  }
+
+  function resetDemoView() {
+    const form = document.getElementById('reset-form');
+    const successCard = document.getElementById('success-state');
+    clearInterval(countdownTimer);
+    successCard.classList.add('hidden');
+    form.classList.remove('hidden');
+  }
+
+  function startCountdown() {
+    clearInterval(countdownTimer);
+    let duration = 14 * 60 + 59;
+    const countdownEl = document.getElementById('countdown');
+
+    countdownTimer = setInterval(() => {
+      const minutes = Math.floor(duration / 60);
+      const seconds = duration % 60;
+      countdownEl.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      if (--duration < 0) {
+        clearInterval(countdownTimer);
+        countdownEl.textContent = "00:00 (Expired)";
+      }
+    }, 1000);
+  }
+
+  function triggerResend() {
+    const resendText = document.getElementById('resend-text');
+    resendText.textContent = "Sent!";
+    startCountdown();
+    setTimeout(() => {
+      resendText.textContent = "Resend";
+    }, 2000);
+  }
+</script></main></body></html>
+
+<!-- BeatCut - Sign Up -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#081486", "secondary": "#ffb2b7", "surface-container-high": "#282a30", "on-error-container": "#ffdad6", "outline": "#908fa0", "tertiary-fixed-dim": "#bdc2ff", "tertiary-fixed": "#e0e0ff", "on-primary-fixed-variant": "#2f2ebe", "on-background": "#e2e2eb", "surface-bright": "#373940", "primary": "#c0c1ff", "primary-container": "#8083ff", "secondary-container": "#b50036", "inverse-surface": "#e2e2eb", "tertiary": "#bdc2ff", "surface-variant": "#33343b", "surface-dim": "#111319", "secondary-fixed-dim": "#ffb2b7", "on-primary": "#1000a9", "surface-tint": "#c0c1ff", "on-tertiary-fixed": "#000767", "on-primary-fixed": "#07006c", "on-primary-container": "#0d0096", "on-secondary-fixed-variant": "#92002a", "on-secondary-fixed": "#40000d", "on-secondary": "#67001b", "on-error": "#690005", "error": "#ffb4ab", "on-tertiary": "#131e8c", "primary-fixed-dim": "#c0c1ff", "surface-container-highest": "#33343b", "surface-container": "#1e1f26", "error-container": "#93000a", "on-surface": "#e2e2eb", "on-tertiary-fixed-variant": "#2f3aa3", "surface-container-lowest": "#0c0e14", "outline-variant": "#464554", "background": "#111319", "tertiary-container": "#7c87f3", "inverse-on-surface": "#2e3037", "primary-fixed": "#e1e0ff", "inverse-primary": "#494bd6", "surface-container-low": "#191b22", "secondary-fixed": "#ffdadb", "surface": "#111319", "on-surface-variant": "#c7c4d7", "on-secondary-container": "#ffc2c4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-3xl": "3rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "margin-tablet": "1.5rem", "space-md": "0.75rem", "space-xl": "1.5rem", "space-2xs": "0.125rem", "gutter": "1rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-2xl": "2rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "headline-lg-mobile": ["Plus Jakarta Sans"], "badge-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "label-code-md": ["13px", {"lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-code-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "badge-sm": ["10px", {"lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>@layer base{html,body{width:100vw;min-height:100vh;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><button aria-label="Go back or close" class="min-w-[44px] min-h-[44px] -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#ffb2b7]"></div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">BeatCut</span><span class="px-space-xs py-space-2xs rounded bg-surface-container text-primary font-label-code-sm text-label-code-sm uppercase">AI</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter pb-space-3xl">
+<!-- Interactive Ambient Kinetic Waveform Visual Header -->
+<div class="relative w-full rounded-xl bg-surface-container-low p-space-lg mb-space-lg overflow-hidden shadow-lg">
+<!-- Kinetic Ambient Glow -->
+<div class="absolute -top-12 -right-10 w-44 h-44 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-6 w-36 h-36 bg-secondary-container/25 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-2xs rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_8px_#ffb2b7] animate-pulse"></span>
+<span class="font-label-code-sm text-label-code-sm text-primary tracking-wider uppercase">V3.4 Neural Cut Engine</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-space-xs">
+        Create your creator account
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Turn raw clips into cinematic, beat-synchronized videos in seconds.
+      </p>
+<!-- Mini dynamic waveform bar decoration -->
+<div aria-hidden="true" class="flex items-center gap-[3px] pt-space-xs h-6 opacity-80">
+<div class="w-1 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-1 h-3 rounded-full bg-primary/40"></div>
+<div class="w-1 h-5 rounded-full bg-primary"></div>
+<div class="w-1 h-4 rounded-full bg-primary/70"></div>
+<div class="w-1 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-1 h-5 rounded-full bg-secondary shadow-[0_0_6px_#ffb2b7]"></div>
+<div class="w-1 h-6 rounded-full bg-secondary"></div>
+<div class="w-1 h-3 rounded-full bg-secondary/60"></div>
+<div class="w-1 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-1 h-4 rounded-full bg-primary"></div>
+<div class="w-1 h-5 rounded-full bg-primary-container"></div>
+<div class="w-1 h-3 rounded-full bg-outline-variant"></div>
+<div class="w-1 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-1 h-5 rounded-full bg-secondary shadow-[0_0_6px_#ffb2b7]"></div>
+<div class="w-1 h-3 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+</div>
+<!-- Free Tier Perk Callout Banner -->
+<div class="relative w-full rounded-xl bg-surface-container p-space-md mb-space-lg shadow-sm flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code-sm text-label-code-sm uppercase tracking-wide text-primary">Creator Tier</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary/15 text-secondary font-badge-sm text-badge-sm uppercase font-semibold">Free Forever</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-space-2xs">
+        Includes <strong class="text-on-surface font-semibold">5 AI beat-sync edits</strong> every month &amp; <strong class="text-on-surface font-semibold">10 GB Cloud Vault</strong>.
+      </p>
+</div>
+</div>
+<!-- Registration Form -->
+<form class="flex flex-col gap-space-md w-full" id="signupForm" novalidate="" onsubmit="event.preventDefault();">
+<!-- Full Name Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-md text-title-md text-on-surface flex items-center justify-between" for="fullName">
+<span>Creator Name</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant font-normal">Display tag</span>
+</label>
+<div class="relative flex items-center w-full">
+<div class="absolute left-space-md flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-md text-body-md rounded-xl py-space-md pl-11 pr-space-md transition-all shadow-inner focus:outline-none focus:bg-surface-container focus:text-on-surface" id="fullName" placeholder="Alex Rivera" type="text" value="Alex Rivera"/>
+</div>
+</div>
+<!-- Creator Email Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-md text-title-md text-on-surface flex items-center justify-between" for="email">
+<span>Work or Creator Email</span>
+<span class="font-label-code-sm text-label-code-sm text-secondary font-medium">Synced with Studio</span>
+</label>
+<div class="relative flex items-center w-full">
+<div class="absolute left-space-md flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-md text-body-md rounded-xl py-space-md pl-11 pr-space-md transition-all shadow-inner focus:outline-none focus:bg-surface-container focus:text-on-surface" id="email" placeholder="alex@creator.io" type="email" value="alex@creator.io"/>
+</div>
+</div>
+<!-- Password Input with Lock & Toggle -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface" for="password">Password</label>
+<span class="font-label-code-sm text-label-code-sm text-primary font-medium tracking-wide" id="strengthText">Strong</span>
+</div>
+<div class="relative flex items-center w-full">
+<div class="absolute left-space-md flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline/70 font-body-md text-body-md rounded-xl py-space-md pl-11 pr-12 transition-all shadow-inner focus:outline-none focus:bg-surface-container focus:text-on-surface" id="password" placeholder="Min 8 chars, 1 number &amp; symbol" type="password" value="CinematicBeat#2025"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-sm p-space-xs text-outline hover:text-on-surface rounded-lg transition-colors flex items-center justify-center min-w-[36px] min-h-[36px]" id="togglePasswordBtn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eyeIcon">visibility</span>
+</button>
+</div>
+<!-- Real-time Password Strength Meter -->
+<div class="flex flex-col gap-1.5 mt-space-2xs">
+<div class="grid grid-cols-4 gap-1.5 h-1.5 w-full">
+<div class="h-full rounded-full bg-primary transition-all duration-300" id="barLength"></div>
+<div class="h-full rounded-full bg-primary transition-all duration-300" id="barNumber"></div>
+<div class="h-full rounded-full bg-primary transition-all duration-300" id="barSymbol"></div>
+<div class="h-full rounded-full bg-primary transition-all duration-300 shadow-[0_0_8px_#c0c1ff]" id="barCase"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-code-sm text-label-code-sm pt-0.5">
+<span class="flex items-center gap-1 text-primary" id="ruleLength">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> 8+ chars
+          </span>
+<span class="flex items-center gap-1 text-primary" id="ruleNumber">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Number
+          </span>
+<span class="flex items-center gap-1 text-primary" id="ruleSymbol">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Symbol
+          </span>
+<span class="flex items-center gap-1 text-primary" id="ruleCase">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Mixed case
+          </span>
+</div>
+</div>
+</div>
+<!-- Terms & Privacy Agreement Checkbox Card -->
+<label class="group relative flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-sm select-none mt-space-xs">
+<input checked="" class="sr-only" id="termsCheckbox" type="checkbox"/>
+<!-- Custom Checkbox Indicator -->
+<div class="w-5 h-5 rounded bg-primary text-on-primary flex items-center justify-center shrink-0 mt-0.5 transition-transform duration-150 active:scale-90 shadow-sm" id="customCheckboxBox">
+<span class="material-symbols-outlined text-[16px] font-bold" id="checkboxIcon">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+          I agree to BeatCut's <span class="text-primary font-medium underline underline-offset-2">Terms of Service</span> and <span class="text-primary font-medium underline underline-offset-2">Privacy Policy</span>.
+        </p>
+<div class="flex items-center gap-1 mt-1 font-label-code-sm text-label-code-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>No credit card required. Cancel anytime.</span>
+</div>
+</div>
+</label>
+<!-- Primary CTA Button -->
+<button class="group relative w-full min-h-[52px] rounded-xl bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center gap-space-xs px-space-lg shadow-[0_8px_24px_rgba(192,193,255,0.22)] active:scale-[0.98] transition-all overflow-hidden mt-space-xs" id="submitBtn" type="button">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="tracking-tight">Create Free Account</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative flex items-center justify-center my-space-lg">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full h-px bg-surface-container-highest"></div>
+</div>
+<span class="relative px-space-md bg-surface font-label-code-sm text-label-code-sm text-outline uppercase tracking-wider">
+      or sign up with
+    </span>
+</div>
+<!-- Social Sign-up Buttons -->
+<div class="grid grid-cols-3 gap-space-sm w-full">
+<!-- Google Button -->
+<button aria-label="Sign up with Google" class="min-h-[48px] rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center gap-2 p-space-sm transition-all active:scale-95 shadow-sm" type="button">
+<svg class="w-5 h-5 shrink-0" fill="currentColor" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span class="font-title-md text-title-md text-[13px]">Google</span>
+</button>
+<!-- Apple Button -->
+<button aria-label="Sign up with Apple" class="min-h-[48px] rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center gap-2 p-space-sm transition-all active:scale-95 shadow-sm" type="button">
+<svg class="w-5 h-5 shrink-0 fill-current text-on-surface" viewbox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.66-.99 1.73-.86 2.76 1.01.08 2.05-.51 2.57-1.26z"></path>
+</svg>
+<span class="font-title-md text-title-md text-[13px]">Apple</span>
+</button>
+<!-- TikTok Creator Button -->
+<button aria-label="Sign up with TikTok Creator" class="min-h-[48px] rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center gap-2 p-space-sm transition-all active:scale-95 shadow-sm" type="button">
+<svg class="w-5 h-5 shrink-0 fill-current text-secondary" viewbox="0 0 24 24">
+<path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-.85-.06A6.34 6.34 0 0 0 3.14 15.7a6.34 6.34 0 0 0 10.84 4.47 6.27 6.27 0 0 0 1.84-4.5V8.82a8.28 8.28 0 0 0 4.77 1.52V6.89c-.34 0-.68-.07-1-.2z"></path>
+</svg>
+<span class="font-title-md text-title-md text-[13px]">TikTok</span>
+</button>
+</div>
+<!-- Privacy Assurance Guard Card -->
+<div class="mt-space-lg rounded-xl bg-surface-container-lowest/80 p-space-md flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      We never sell your media or use your raw footage to train public AI models.
+    </p>
+</div>
+<!-- Bottom Switch to Sign In -->
+<div class="mt-space-xl flex items-center justify-center gap-space-xs py-space-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">Already have an account?</span>
+<button class="font-title-md text-title-md text-primary hover:text-primary-fixed underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-all" type="button">
+      Sign in
+    </button>
+</div>
+</div>
+<script>
+  (function initSignUpMicroInteractions() {
+    const passwordInput = document.getElementById('password');
+    const togglePasswordBtn = document.getElementById('togglePasswordBtn');
+    const eyeIcon = document.getElementById('eyeIcon');
+    const termsCheckbox = document.getElementById('termsCheckbox');
+    const customCheckboxBox = document.getElementById('customCheckboxBox');
+    const checkboxIcon = document.getElementById('checkboxIcon');
+    const strengthText = document.getElementById('strengthText');
+    const submitBtn = document.getElementById('submitBtn');
+
+    const barLength = document.getElementById('barLength');
+    const barNumber = document.getElementById('barNumber');
+    const barSymbol = document.getElementById('barSymbol');
+    const barCase = document.getElementById('barCase');
+
+    const ruleLength = document.getElementById('ruleLength');
+    const ruleNumber = document.getElementById('ruleNumber');
+    const ruleSymbol = document.getElementById('ruleSymbol');
+    const ruleCase = document.getElementById('ruleCase');
+
+    // 1. Password Visibility Toggle
+    if (togglePasswordBtn && passwordInput && eyeIcon) {
+      togglePasswordBtn.addEventListener('click', () => {
+        const isPassword = passwordInput.getAttribute('type') === 'password';
+        passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+        eyeIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+        eyeIcon.classList.toggle('text-primary', isPassword);
+      });
+    }
+
+    // 2. Interactive Reactive Checkbox
+    if (termsCheckbox && customCheckboxBox && checkboxIcon) {
+      termsCheckbox.addEventListener('change', () => {
+        const isChecked = termsCheckbox.checked;
+        if (isChecked) {
+          customCheckboxBox.className = "w-5 h-5 rounded bg-primary text-on-primary flex items-center justify-center shrink-0 mt-0.5 transition-transform duration-150 active:scale-90 shadow-sm";
+          checkboxIcon.style.opacity = '1';
+        } else {
+          customCheckboxBox.className = "w-5 h-5 rounded bg-surface-container-highest text-transparent flex items-center justify-center shrink-0 mt-0.5 transition-transform duration-150 active:scale-90";
+          checkboxIcon.style.opacity = '0';
+        }
+      });
+    }
+
+    // 3. Real-time Password Strength Meter Calculator
+    function updatePasswordMeter() {
+      const val = passwordInput ? passwordInput.value : '';
+      const hasLength = val.length >= 8;
+      const hasNumber = /\d/.test(val);
+      const hasSymbol = /[^A-Za-z0-9]/.test(val);
+      const hasMixedCase = /[a-z]/.test(val) && /[A-Z]/.test(val);
+
+      const updateRuleUI = (element, barElement, isValid) => {
+        if (!element || !barElement) return;
+        const icon = element.querySelector('.material-symbols-outlined');
+        if (isValid) {
+          element.className = 'flex items-center gap-1 text-primary';
+          if (icon) icon.textContent = 'check_circle';
+          barElement.className = 'h-full rounded-full bg-primary transition-all duration-300 shadow-[0_0_6px_#c0c1ff]';
+        } else {
+          element.className = 'flex items-center gap-1 text-outline-variant';
+          if (icon) icon.textContent = 'radio_button_unchecked';
+          barElement.className = 'h-full rounded-full bg-surface-container-highest transition-all duration-300';
+        }
+      };
+
+      updateRuleUI(ruleLength, barLength, hasLength);
+      updateRuleUI(ruleNumber, barNumber, hasNumber);
+      updateRuleUI(ruleSymbol, barSymbol, hasSymbol);
+      updateRuleUI(ruleCase, barCase, hasMixedCase);
+
+      const score = [hasLength, hasNumber, hasSymbol, hasMixedCase].filter(Boolean).length;
+      if (!strengthText) return;
+
+      if (val.length === 0) {
+        strengthText.textContent = 'Enter password';
+        strengthText.className = 'font-label-code-sm text-label-code-sm text-outline';
+      } else if (score <= 1) {
+        strengthText.textContent = 'Weak';
+        strengthText.className = 'font-label-code-sm text-label-code-sm text-error font-medium';
+      } else if (score === 2) {
+        strengthText.textContent = 'Fair';
+        strengthText.className = 'font-label-code-sm text-label-code-sm text-secondary font-medium';
+      } else if (score === 3) {
+        strengthText.textContent = 'Good';
+        strengthText.className = 'font-label-code-sm text-label-code-sm text-tertiary font-medium';
+      } else {
+        strengthText.textContent = 'Strong';
+        strengthText.className = 'font-label-code-sm text-label-code-sm text-primary font-medium tracking-wide';
+      }
+    }
+
+    if (passwordInput) {
+      passwordInput.addEventListener('input', updatePasswordMeter);
+      updatePasswordMeter();
+    }
+
+    // 4. Submit Micro Feedback
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        if (!termsCheckbox.checked) {
+          customCheckboxBox.classList.add('animate-bounce');
+          setTimeout(() => customCheckboxBox.classList.remove('animate-bounce'), 600);
+          return;
+        }
+        submitBtn.classList.add('scale-95', 'opacity-90');
+        const originalContent = submitBtn.innerHTML;
+        submitBtn.innerHTML = `
+          <span class="w-4 h-4 border-2 border-on-primary border-t-transparent rounded-full animate-spin"></span>
+          <span>Syncing BeatVault...</span>
+        `;
+        setTimeout(() => {
+          submitBtn.classList.remove('scale-95', 'opacity-90');
+          submitBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            <span>Welcome, Alex!</span>
+          `;
+          setTimeout(() => {
+            submitBtn.innerHTML = originalContent;
+          }, 2400);
+        }, 1200);
+      });
+    }
+  })();
+</script></main></body></html>
+
+<!-- BeatCut - My Projects -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#191b22", "on-secondary-fixed-variant": "#92002a", "on-secondary-container": "#ffc2c4", "surface-dim": "#111319", "on-primary-container": "#0d0096", "on-tertiary-fixed": "#000767", "surface-tint": "#c0c1ff", "on-primary-fixed": "#07006c", "surface-bright": "#373940", "outline-variant": "#464554", "tertiary-container": "#7c87f3", "error-container": "#93000a", "surface-container": "#1e1f26", "error": "#ffb4ab", "secondary-container": "#b50036", "primary": "#c0c1ff", "secondary-fixed": "#ffdadb", "on-primary-fixed-variant": "#2f2ebe", "on-tertiary": "#131e8c", "secondary": "#ffb2b7", "surface": "#111319", "primary-fixed-dim": "#c0c1ff", "on-error-container": "#ffdad6", "on-surface": "#e2e2eb", "inverse-on-surface": "#2e3037", "surface-container-lowest": "#0c0e14", "background": "#111319", "on-secondary-fixed": "#40000d", "inverse-primary": "#494bd6", "on-background": "#e2e2eb", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#ffb2b7", "surface-container-highest": "#33343b", "outline": "#908fa0", "surface-variant": "#33343b", "tertiary-fixed-dim": "#bdc2ff", "primary-container": "#8083ff", "primary-fixed": "#e1e0ff", "surface-container-high": "#282a30", "tertiary-fixed": "#e0e0ff", "tertiary": "#bdc2ff", "inverse-surface": "#e2e2eb", "on-tertiary-container": "#081486", "on-primary": "#1000a9", "on-secondary": "#67001b", "on-tertiary-fixed-variant": "#2f3aa3", "on-error": "#690005" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "space-3xl": "3rem", "space-2xs": "0.125rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-2xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-tablet": "1.5rem", "gutter": "1rem", "margin-desktop": "2rem" }, fontFamily: { "badge-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"] }, fontSize: { "badge-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-code-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-code-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="BeatCut Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XWrPLTlat5Q3qRJgAO4nc2AvjkRo4YzRNF_zWnYx0kxsuQzUYRdVshBFpaVtqL-VLlWpGFqDDQOjKN0uCXOkuFn5mn1wCiLamDlSvRAHJoKaGmFJoT6nqe0ZAC5JGZPIisKYmA2msWnKecRA-EiWECNn5P4BiQRLLX345rwGDStNljdqAHQwZy0tBpRC4vRwgH7GCCOdeV9aTA48ehFU_BVQJgE2gTtmgnAdS9TIxp5WvC-W41vslBz_Y7"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface truncate">BeatCut</span><span class="font-badge-sm text-badge-sm text-primary uppercase bg-primary-container/20 px-space-xs py-0.5 rounded-full">AI</span></div><span class="font-label-code-sm text-label-code-sm text-on-surface-variant truncate uppercase tracking-wider">Home</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded-full shadow-[0_0_12px_rgba(128,131,255,0.12)]"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-on-surface">3 edits left</span></div><button aria-label="User Profile" class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKklERnzk6JB6pHiKu4rk9iB-GxWGqOU8kNZPJyh7KO4gCDdwveTRN8AYRK2UfaBzoOMc_FN2cJp7pzck7X8qahdTP7dv-oPTfo35gKLLFOgLj8go9MK1PCJYM6UqKWxNwUUEyLEYOD5_zvB9qnsshOJ4TEti7vTbldTfxeCCB86kJ3NMc18QbxHXie_tvxCG1fP6lKymcI0UNLgrR-SF_0q70zUv8tCfjktuiyfU7bISK68-Mmnie-g"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md pb-space-3xl space-y-space-md">
+<!-- Screen Context & Multi-Select Bar -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Studio Projects</h1>
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-tertiary">4</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Select multiple projects" class="h-9 px-space-sm rounded-lg bg-surface-container-high text-on-surface-variant flex items-center gap-1 active:scale-95 transition-transform" id="batch-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+<span class="font-label-code-sm text-label-code-sm">Select</span>
+</button>
+<button aria-label="Cloud sync status" class="h-9 w-9 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cloud_done</span>
+</button>
+</div>
+</div>
+<!-- Search Input -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-0 shadow-sm" id="project-search" placeholder="Search project, track, or mood..." type="text"/>
+<button aria-label="Clear search" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface hidden" id="clear-search" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Filter Chips (Horizontal Scrollable) -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-space-md px-space-md scrollbar-none">
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-code-sm text-label-code-sm bg-primary-container text-on-primary-container shadow-sm flex-shrink-0" data-filter="all">
+<span>All</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest/30 font-bold">4</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-code-sm text-label-code-sm bg-surface-container-high text-on-surface-variant active:scale-95 flex-shrink-0" data-filter="ready">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Ready</span>
+<span class="text-outline">2</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-code-sm text-label-code-sm bg-surface-container-high text-on-surface-variant active:scale-95 flex-shrink-0" data-filter="processing">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Rendering</span>
+<span class="text-outline">1</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-code-sm text-label-code-sm bg-surface-container-high text-on-surface-variant active:scale-95 flex-shrink-0" data-filter="draft">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>Drafts</span>
+<span class="text-outline">1</span>
+</button>
+<button class="filter-chip flex items-center gap-1.5 px-3 py-1.5 rounded-full font-label-code-sm text-label-code-sm bg-surface-container-high text-on-surface-variant active:scale-95 flex-shrink-0" data-filter="archived">
+<span>Archived</span>
+<span class="text-outline">0</span>
+</button>
+</div>
+<!-- Sorting & View Mode Strip -->
+<div class="flex items-center justify-between pt-0.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-code-sm text-label-code-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sort</span>
+<button class="flex items-center gap-1 hover:text-on-surface transition-colors" id="sort-trigger" type="button">
+<span id="current-sort">Recently Edited</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+<div class="flex items-center bg-surface-container-high p-0.5 rounded-lg shadow-inner">
+<button aria-label="Grid visual view" class="w-7 h-7 flex items-center justify-center rounded bg-surface text-primary" id="view-card" type="button">
+<span class="material-symbols-outlined text-[18px]">view_stream</span>
+</button>
+<button aria-label="Compact list view" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface" id="view-compact" type="button">
+<span class="material-symbols-outlined text-[18px]">menu</span>
+</button>
+</div>
+</div>
+<!-- Projects Stream -->
+<div class="space-y-space-md" id="projects-container">
+<!-- PROJECT 1: Ready - Japan Summer Memories -->
+<article class="project-item group relative rounded-2xl bg-surface-container p-3.5 shadow-md flex flex-col space-y-3" data-status="ready" data-title="Japan Summer Memories">
+<!-- Media Aspect Card Preview -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic Tokyo neon alleyway at rainy dusk, drenched asphalt with vibrant purple and cyan light reflections, cozy ramen bar lanterns, ultra-sharp 4K cinematic still with motion blur effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKZwaigojiUadi_tmLvwPVhQHlDv0KhQ1OJ4VckiTAm84bi-J4V0wamX7g33FdfhNTJLYY-9cJLC666l8qNCaJoEkaAnM4E8HV8qW2qGjOZl_FtU32wrkdZXYtN6FlKtwEJT0921imb5cWDBbRfxq-qmaO5ZRK7dhCg0E5jptqpB75IaZsig9PLin5bCbNDBhg9mUgsVGkvOwIQo0Ta5w7c-Mo6dNfzqInj16eBxNnNE2luD54nvF6OQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<!-- Badges on Preview -->
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-primary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Ready
+          </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-on-surface-variant">
+            9:16
+          </span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded font-label-code-sm text-label-code-sm text-on-surface">
+            0:42
+          </span>
+</div>
+<!-- Audio Sync Overlay Indicator -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">music_note</span>
+<span class="font-label-code-sm text-label-code-sm truncate max-w-[140px]">Tokyo Drift Lo-Fi</span>
+</div>
+<div class="flex items-center gap-1 font-label-code-sm text-label-code-sm bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-md text-secondary">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>24 cuts · 118 BPM</span>
+</div>
+</div>
+</div>
+<!-- Card Metadata & Title -->
+<div class="flex items-start justify-between gap-space-sm pt-0.5">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<h2 class="font-title-md text-title-md font-semibold text-on-surface truncate">Japan Summer Memories</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Travel &amp; Exploration · 1080p 60fps · Edited 2h ago</p>
+</div>
+<button aria-label="Project actions" class="project-menu-btn min-h-[36px] min-w-[36px] flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[40px] rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Preview Cut</span>
+</button>
+<button aria-label="Export video" class="w-10 min-h-[40px] rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">ios_share</span>
+</button>
+</div>
+</article>
+<!-- PROJECT 2: Processing - College Farewell 2026 -->
+<article class="project-item group relative rounded-2xl bg-surface-container p-3.5 shadow-md flex flex-col space-y-3" data-status="processing" data-title="College Farewell 2026">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Concert stage illuminated with intense magenta and laser violet spotlights, university celebration crowd silhouetted with hands raised in celebration, smoke and atmospheric stage lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkKOIhmDRTPe7bu5q7i9h0lfN-hCG9FmoPSsxTSITxWGWDnQin7CoBEYQQxn5sWu9fr4NzwbCRLBJI5fUY9_hdtMVEjMpxQE70lSx32T5HO6P7TcIlij8Stqyugy1cbVupquWm1olL5IawEk-y5HlALM0a6r0mzzkolij3DhyE5YDqKQQwbPYvi6C9eC8fO5l2AZs0mp9hcfcdN14R7PKG0XmElgJ5YXkbgZfGO9n33eGei1qb91ezzQ"/>
+<div class="absolute inset-0 bg-surface-container-lowest/70 backdrop-blur-[2px]"></div>
+<!-- Pulsing Processing Pill -->
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1.5 bg-secondary-container px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-on-secondary-container shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+            Rendering 64%
+          </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-on-surface-variant">
+            16:9
+          </span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded font-label-code-sm text-label-code-sm text-on-surface">
+            1:15
+          </span>
+</div>
+<!-- Center AI Generating Visualizer -->
+<div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+<div class="w-10 h-10 rounded-full bg-primary-container/30 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-[22px] animate-spin">sync</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Stage 4 of 6: Beat Transitions</span>
+<span class="font-label-code-sm text-label-code-sm text-tertiary mt-0.5">~54s remaining · Audio locking</span>
+</div>
+<!-- Micro Audio Waveform Track Representation -->
+<div class="absolute bottom-2.5 left-3 right-3">
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-secondary h-full rounded-full" style="width: 64%"></div>
+</div>
+</div>
+</div>
+<!-- Metadata & Info -->
+<div class="flex items-start justify-between gap-space-sm pt-0.5">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md font-semibold text-on-surface truncate">College Farewell 2026</h2>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Memories · Audio: Neon Nostalgia</span>
+</div>
+</div>
+<button aria-label="Processing options" class="project-menu-btn min-h-[36px] min-w-[36px] flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Action: Monitor / Background Render -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[40px] rounded-xl bg-surface-container-high text-on-surface font-title-md text-title-md font-semibold flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+<span>View Render Stage</span>
+</button>
+<button class="px-3 min-h-[40px] rounded-xl bg-surface-container-high text-error font-label-code-sm text-label-code-sm flex items-center justify-center active:scale-95 transition-transform" type="button">
+          Cancel
+        </button>
+</div>
+</article>
+<!-- PROJECT 3: Draft - Mom & Dad Anniversary -->
+<article class="project-item group relative rounded-2xl bg-surface-container p-3.5 shadow-md flex flex-col space-y-3" data-status="draft" data-title="Mom &amp; Dad Anniversary">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-90" data-alt="Intimate cozy family dinner gathering with warm ambient candlelight, laughing parents clinking champagne flutes, soft vintage bokeh, emotional golden hour warmth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA726LvOidrUpyFs3NkOzfcY9F21rkgdy16pWvW6MijgMyNR2KT1LhICJ-RAaFWXRG75ERe44-W9720hCenxWH5Sl_7wkl6XGeifTgy8lXQDdfVjyJdP3WgAlWdW3pyGH1sZN9blwiyfLHFpNZcxBiOhzJ-C-_7mzIXR3YDW5n5uvkyXS1ppcwUoRcbJxi7Nw0Fq4kXyGEnHrqylB_-RF62T6rnbn09_NjVfvZ5ikDmfhSD1ahe0_VVVA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-bright/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-on-surface">
+            Draft
+          </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-on-surface-variant">
+            1:1 Square
+          </span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded font-label-code-sm text-label-code-sm text-secondary">
+            Unsaved Cut
+          </span>
+</div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[14px] text-outline">movie</span>
+<span class="font-label-code-sm text-label-code-sm">8 raw clips attached</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-md text-on-surface-variant">
+            No music bound
+          </span>
+</div>
+</div>
+<!-- Metadata & Info -->
+<div class="flex items-start justify-between gap-space-sm pt-0.5">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md font-semibold text-on-surface truncate">Mom &amp; Dad Anniversary</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Family Celebration · 4 Keyframes placed · Yesterday</p>
+</div>
+<button aria-label="Draft actions" class="project-menu-btn min-h-[36px] min-w-[36px] flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Action -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[40px] rounded-xl bg-surface-container-high text-primary font-title-md text-title-md font-semibold flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+<span>Resume Studio Edit</span>
+</button>
+</div>
+</article>
+<!-- PROJECT 4: Ready - Weekend with Friends -->
+<article class="project-item group relative rounded-2xl bg-surface-container p-3.5 shadow-md flex flex-col space-y-3" data-status="ready" data-title="Weekend with Friends">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Golden hour coastal bicycle ride with young friends, ocean shoreline breeze, warm sun flares, vibrant motion-tracked aesthetic with cinematic color grading" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkaY9tPO1Kd1cmNfI4vpnrMAkqUYLJZaVwcBcBEB23OO-ichZhdheZVa0JUTR9BY83BKcCecGSEgRpx_wOZKN9dHEEZyR6_0uCttbKMMQAWIxZQ0pPC8RKbqtCR69PyUXlkByiPAwNskAVdVWNSCCOF9S64pIgHs8xooRHuchpWsLpF7b7K9-aynmX_Bw4glUGKiYAyw80p1jg6MNa6YCq0oPji5t_qvNEJTEBiHauo-LO_cX3RQMsWQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-primary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Ready
+          </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full font-label-code-sm text-label-code-sm text-on-surface-variant">
+            9:16
+          </span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded font-label-code-sm text-label-code-sm text-on-surface">
+            0:28
+          </span>
+</div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">music_note</span>
+<span class="font-label-code-sm text-label-code-sm truncate max-w-[140px]">Summer Haze</span>
+</div>
+<div class="flex items-center gap-1 font-label-code-sm text-label-code-sm bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-md text-secondary">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>18 cuts · 124 BPM</span>
+</div>
+</div>
+</div>
+<!-- Metadata & Info -->
+<div class="flex items-start justify-between gap-space-sm pt-0.5">
+<div class="min-w-0 flex-1">
+<h2 class="font-title-md text-title-md font-semibold text-on-surface truncate">Weekend with Friends</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Outing &amp; Social · 4K 30fps · 3 days ago</p>
+</div>
+<button aria-label="Project actions" class="project-menu-btn min-h-[36px] min-w-[36px] flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 min-h-[40px] rounded-xl bg-primary text-on-primary font-title-md text-title-md font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Preview Cut</span>
+</button>
+<button aria-label="Quick share" class="w-10 min-h-[40px] rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">share</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Vault Storage Indicator Mini Card -->
+<div class="rounded-2xl bg-surface-container-low p-space-md shadow-sm space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">cloud</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface">BeatVault Storage</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3.4 GB of 10.0 GB utilized (34%)</p>
+</div>
+</div>
+<button class="font-label-code-sm text-label-code-sm text-primary hover:underline px-2 py-1" type="button">
+        Manage
+      </button>
+</div>
+<!-- Storage Progress bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-primary-container h-full rounded-full" style="width: 34%"></div>
+</div>
+</div>
+<!-- Floating "+ New BeatCut" Action Bar anchored above bottom nav -->
+<div class="sticky bottom-4 z-40 w-full pt-2">
+<button class="w-full h-14 rounded-2xl bg-gradient-to-r from-primary-container via-inverse-primary to-primary-container text-on-primary shadow-[0_12px_28px_rgba(128,131,255,0.35)] flex items-center justify-center gap-2 font-title-md text-title-md font-bold tracking-tight active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[24px]">add_circle</span>
+<span>Create New BeatCut</span>
+</button>
+</div>
+</div>
+<script>
+  (() => {
+    // 1. Search Filtering Logic
+    const searchInput = document.getElementById('project-search');
+    const clearBtn = document.getElementById('clear-search');
+    const projectCards = document.querySelectorAll('.project-item');
+    const filterChips = document.querySelectorAll('.filter-chip');
+
+    let currentFilter = 'all';
+
+    function runFilter() {
+      const query = (searchInput?.value || '').trim().toLowerCase();
+      
+      projectCards.forEach(card => {
+        const title = (card.getAttribute('data-title') || '').toLowerCase();
+        const status = card.getAttribute('data-status');
+
+        const matchesQuery = query === '' || title.includes(query);
+        const matchesStatus = currentFilter === 'all' || status === currentFilter;
+
+        if (matchesQuery && matchesStatus) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    searchInput?.addEventListener('input', (e) => {
+      if (searchInput.value.length > 0) {
+        clearBtn?.classList.remove('hidden');
+      } else {
+        clearBtn?.classList.add('hidden');
+      }
+      runFilter();
+    });
+
+    clearBtn?.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      runFilter();
+    });
+
+    // 2. Status Chips
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary-container');
+          c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary-container');
+        chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+        currentFilter = chip.getAttribute('data-filter') || 'all';
+        runFilter();
+      });
+    });
+
+    // 3. Compact vs Grid View Toggle
+    const btnCard = document.getElementById('view-card');
+    const btnCompact = document.getElementById('view-compact');
+    const container = document.getElementById('projects-container');
+
+    btnCompact?.addEventListener('click', () => {
+      btnCompact.classList.add('bg-surface', 'text-primary');
+      btnCompact.classList.remove('text-on-surface-variant');
+      btnCard?.classList.remove('bg-surface', 'text-primary');
+      btnCard?.classList.add('text-on-surface-variant');
+
+      // Shift cards to compact preview heights
+      projectCards.forEach(card => {
+        const preview = card.querySelector('.relative.w-full.h-44');
+        if (preview) {
+          preview.classList.remove('h-44');
+          preview.classList.add('h-24');
+        }
+      });
+    });
+
+    btnCard?.addEventListener('click', () => {
+      btnCard.classList.add('bg-surface', 'text-primary');
+      btnCard.classList.remove('text-on-surface-variant');
+      btnCompact?.classList.remove('bg-surface', 'text-primary');
+      btnCompact?.classList.add('text-on-surface-variant');
+
+      projectCards.forEach(card => {
+        const preview = card.querySelector('.relative.w-full');
+        if (preview) {
+          preview.classList.remove('h-24');
+          preview.classList.add('h-44');
+        }
+      });
+    });
+
+    // 4. Sort dropdown rotation demo
+    const sortTrigger = document.getElementById('sort-trigger');
+    const sortLabel = document.getElementById('current-sort');
+    const sorts = ['Recently Edited', 'Created Date', 'Duration', 'Title A-Z'];
+    let sortIdx = 0;
+
+    sortTrigger?.addEventListener('click', () => {
+      sortIdx = (sortIdx + 1) % sorts.length;
+      if (sortLabel) sortLabel.textContent = sorts[sortIdx];
+    });
+
+    // 5. Overflow feedback simulation
+    document.querySelectorAll('.project-menu-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        btn.classList.add('scale-90');
+        setTimeout(() => btn.classList.remove('scale-90'), 150);
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="create" href="#"><div class="relative flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[20px] text-tertiary">auto_videocam</span></div><span class="font-label-code-sm text-label-code-sm mt-0.5">Create</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">video_library</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Settings</span></a></div></nav></body></html>

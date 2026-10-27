@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#191b22", "on-secondary-fixed-variant": "#92002a", "on-secondary-container": "#ffc2c4", "surface-dim": "#111319", "on-primary-container": "#0d0096", "on-tertiary-fixed": "#000767", "surface-tint": "#c0c1ff", "on-primary-fixed": "#07006c", "surface-bright": "#373940", "outline-variant": "#464554", "tertiary-container": "#7c87f3", "error-container": "#93000a", "surface-container": "#1e1f26", "error": "#ffb4ab", "secondary-container": "#b50036", "primary": "#c0c1ff", "secondary-fixed": "#ffdadb", "on-primary-fixed-variant": "#2f2ebe", "on-tertiary": "#131e8c", "secondary": "#ffb2b7", "surface": "#111319", "primary-fixed-dim": "#c0c1ff", "on-error-container": "#ffdad6", "on-surface": "#e2e2eb", "inverse-on-surface": "#2e3037", "surface-container-lowest": "#0c0e14", "background": "#111319", "on-secondary-fixed": "#40000d", "inverse-primary": "#494bd6", "on-background": "#e2e2eb", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#ffb2b7", "surface-container-highest": "#33343b", "outline": "#908fa0", "surface-variant": "#33343b", "tertiary-fixed-dim": "#bdc2ff", "primary-container": "#8083ff", "primary-fixed": "#e1e0ff", "surface-container-high": "#282a30", "tertiary-fixed": "#e0e0ff", "tertiary": "#bdc2ff", "inverse-surface": "#e2e2eb", "on-tertiary-container": "#081486", "on-primary": "#1000a9", "on-secondary": "#67001b", "on-tertiary-fixed-variant": "#2f3aa3", "on-error": "#690005" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "space-3xl": "3rem", "space-2xs": "0.125rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-lg": "1rem", "space-2xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-tablet": "1.5rem", "gutter": "1rem", "margin-desktop": "2rem" }, fontFamily: { "badge-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-code-sm": ["JetBrains Mono"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-code-md": ["JetBrains Mono"] }, fontSize: { "badge-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-code-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-code-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_12px_rgba(0,0,0,0.35)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="BeatCut Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XWrPLTlat5Q3qRJgAO4nc2AvjkRo4YzRNF_zWnYx0kxsuQzUYRdVshBFpaVtqL-VLlWpGFqDDQOjKN0uCXOkuFn5mn1wCiLamDlSvRAHJoKaGmFJoT6nqe0ZAC5JGZPIisKYmA2msWnKecRA-EiWECNn5P4BiQRLLX345rwGDStNljdqAHQwZy0tBpRC4vRwgH7GCCOdeV9aTA48ehFU_BVQJgE2gTtmgnAdS9TIxp5WvC-W41vslBz_Y7"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface truncate">BeatCut</span><span class="font-badge-sm text-badge-sm text-primary uppercase bg-primary-container/20 px-space-xs py-0.5 rounded-full">AI</span></div><span class="font-label-code-sm text-label-code-sm text-on-surface-variant truncate uppercase tracking-wider">Home</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded-full shadow-[0_0_12px_rgba(128,131,255,0.12)]"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-on-surface">3 edits left</span></div><button aria-label="User Profile" class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKklERnzk6JB6pHiKu4rk9iB-GxWGqOU8kNZPJyh7KO4gCDdwveTRN8AYRK2UfaBzoOMc_FN2cJp7pzck7X8qahdTP7dv-oPTfo35gKLLFOgLj8go9MK1PCJYM6UqKWxNwUUEyLEYOD5_zvB9qnsshOJ4TEti7vTbldTfxeCCB86kJ3NMc18QbxHXie_tvxCG1fP6lKymcI0UNLgrR-SF_0q70zUv8tCfjktuiyfU7bISK68-Mmnie-g"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md gap-space-lg">
+<!-- Welcome & Quota Pill Section -->
+<section class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-code-sm text-label-code-sm text-tertiary uppercase tracking-wider">Welcome back</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight truncate">
+          Ready for your next story, Alex?
+        </h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface">3 of 5 AI Edits Left</span>
+<span class="font-badge-sm text-badge-sm text-primary uppercase bg-primary-container/20 px-1 rounded">Free tier</span>
+</div>
+<button class="font-label-code-sm text-label-code-sm text-primary hover:text-on-primary-fixed ml-auto transition-colors flex items-center gap-0.5" type="button">
+        Upgrade
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Hero Creation Catalyst Card -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-lg shadow-xl">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-40 h-40 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">electric_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-sm text-badge-sm text-secondary uppercase font-bold tracking-widest">Beat-Sync Engine v2.4</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Start a new beat edit</h3>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2 py-0.5 rounded-full text-tertiary">
+<span class="material-symbols-outlined text-[14px]">graphic_eq</span>
+<span class="font-label-code-sm text-label-code-sm">Auto-Snapping</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Upload your clips. Choose your vibe. Get a video that feels professionally edited in seconds.
+      </p>
+<div class="flex flex-col sm:flex-row gap-space-xs mt-space-2xs">
+<button class="w-full flex items-center justify-center gap-space-sm bg-primary text-on-primary font-title-md text-title-md py-3 px-space-lg rounded-xl shadow-lg shadow-primary-container/20 transition-transform active:scale-[0.98]" id="create-modal-trigger" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Create my video</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-sm bg-surface-container text-on-surface font-title-md text-title-md py-3 px-space-lg rounded-xl hover:bg-surface-bright transition-colors active:scale-[0.98]" id="explore-styles-scroll" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span>Explore styles</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quick Style Inspirations Carousel -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">music_note</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Quick Inspirations</h3>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Tap to apply</span>
+</div>
+<!-- Horizontal Scroll Carousel -->
+<div class="flex gap-space-sm overflow-x-auto pb-space-xs -mx-space-md px-space-md no-scrollbar">
+<!-- Style 1: Travel -->
+<div class="flex-shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden flex flex-col group cursor-pointer active:scale-95 transition-transform shadow-md">
+<div class="h-24 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Vibrant drone cinematic landscape of golden sunset over tropical ocean cliffs with deep purple and warm magenta lighting, hyper-detailed photography, professional film grading" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwoWnwXrTqb5tUk97owaZ1m_Q_CzZv0NPASl3RXbA9sVFsWMHJgVJJQKmv_xKRQkf9MnVGQAvbKiyd0qufWN2S4CyMku9a5uvcg7_eTJinhEKKVD5nVmLtiqpgrJgqUDjmMFh-DYxn_CUBszBJv7pRxtITV1rXi3TiaC4lJh4bR83Jn7EROMgrzRFUiRLprziE7loAIBmCesd88TYhdp7trAHOjimyzdg6wEcg4P_j6dKZYfWzgjkTRg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">0:30s</span>
+</div>
+<div class="p-space-xs flex flex-col gap-0.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold truncate">Summer Drift</span>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-badge-sm text-badge-sm text-tertiary">128 BPM</span>
+<span class="font-label-code-sm text-label-code-sm">Lo-Fi Trap</span>
+</div>
+</div>
+</div>
+<!-- Style 2: Wedding -->
+<div class="flex-shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden flex flex-col group cursor-pointer active:scale-95 transition-transform shadow-md">
+<div class="h-24 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Romantic slow motion outdoor wedding scene with bride veil blowing softly in sun flares, soft pastel tones, cinematic shallow depth of field, warm golden ambient luminescence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs1n8Wdp_oV9y3LXEdQQVOhU-aEzP9aaVCAhjWJM5pAVlurd0EvY7Kz7R77BDFclvowPIfyRxgOdkr9PQ-QWJYi6_RA6bd746IOJIau5Unk46ZZj763oMhelY_vdE1ui00f7iDqXVT0feZh5vQsj46XssvK-RXVuyhEBYWLIcSX6tveSjw9PxUIyX_Yy32c147CLxp7K7qfYcYLlfO7gXJVKuEpLCSUqwnccy3WD6Jw-boM_3mLoPtig"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">1:00m</span>
+</div>
+<div class="p-space-xs flex flex-col gap-0.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold truncate">Timeless Romance</span>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-badge-sm text-badge-sm text-tertiary">92 BPM</span>
+<span class="font-label-code-sm text-label-code-sm">Acoustic</span>
+</div>
+</div>
+</div>
+<!-- Style 3: Cinematic High-Energy -->
+<div class="flex-shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden flex flex-col group cursor-pointer active:scale-95 transition-transform shadow-md">
+<div class="h-24 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Night cityscape in Tokyo with neon blue and vibrant magenta reflections on rain drenched asphalt, high contrast fast shutter action shot, futuristic cinematic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr7INZo9QEvzVAexFDMRm9znst2CZg9RZfANk2k6UcXeJYsGT29RqFfzKoXC7SxA50px3NX3PxdJo5KBXg_x9xlcqT5joozrTkhtOiaHkSpVZpwxiHxffaazxjZhmH0f-Tn4eDZLA25doFEsuAkqfTaK0wL6FBFjyJd6MCzeO85_nhuq3u8CTvGq_iaEjTEWSUmefTvTL4q0FV_SSlQEQsMvLl7RjrVwOB5cQ5mAouy6_v44k36ctG5w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">0:15s</span>
+</div>
+<div class="p-space-xs flex flex-col gap-0.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold truncate">Neon Phonk</span>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-badge-sm text-badge-sm text-secondary">145 BPM</span>
+<span class="font-label-code-sm text-label-code-sm">Bass Drop</span>
+</div>
+</div>
+</div>
+<!-- Style 4: Daily Vlog -->
+<div class="flex-shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden flex flex-col group cursor-pointer active:scale-95 transition-transform shadow-md">
+<div class="h-24 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Aesthetic coffee brewing flatlay with steam rising into sun rays on rustic wooden table, cozy warm minimalism, organic cafe ambiance, crisp visual detailing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFfdgMIRqOOB8ZQSBP3I-09wnuMC8ZG53PTy87NGXgwj3PnnZJK5DFWCo-5gE33Wto7ja_0NGsYMYAeCn4qB-lGflrHiPwboQ9Q10F4hZf8uTaZLdoNF-LKeNIfgB8E9DVo09yw4Dl3DFWCS39_7oZWIaQo_7zEVYOdpSUqVkIUR29wZ8s8iYSpCfXYHbZ4YnaKcKXkWbw7Ro1vcISuu-YOLziZuSCGyTzs3ofhd2hBW7HCA-TjS-wXg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">0:45s</span>
+</div>
+<div class="p-space-xs flex flex-col gap-0.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold truncate">Cafe Aesthetic</span>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-badge-sm text-badge-sm text-tertiary">110 BPM</span>
+<span class="font-label-code-sm text-label-code-sm">Indie Pop</span>
+</div>
+</div>
+</div>
+<!-- Style 5: Product Spotlight -->
+<div class="flex-shrink-0 w-36 rounded-xl bg-surface-container overflow-hidden flex flex-col group cursor-pointer active:scale-95 transition-transform shadow-md">
+<div class="h-24 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Minimalist luxury sneaker floating over sleek dark podium with dramatic neon violet rim lighting and sharp studio reflections, ultra crisp commercial rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KuVJ0db2-gidgvcmF8D62x7Sh_ixU_G9JtAS534GDk7Vt66whsEwCiebc6uVz9qH70zWRm7fUxyauov8RdxQU-AKHoe3XXck5ZN4ZRESL91QA6Jan36HFPcBMckI4BcjeAZZL3XVIlzajt0JxJkYvB_3iiab1s6DS5XvMiHBAFGhrDJ3_4oqrAFoOP7YUAZAoR9QkUSxlcyw4uqIEIDtvdqQQfSHsd3mKwnj6lijtoh8vMZhe6qg3g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-2 right-2 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">0:20s</span>
+</div>
+<div class="p-space-xs flex flex-col gap-0.5">
+<span class="font-title-md text-body-md text-on-surface font-semibold truncate">Drop Commercial</span>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-badge-sm text-badge-sm text-primary">132 BPM</span>
+<span class="font-label-code-sm text-label-code-sm">Electro</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Projects Section -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">video_library</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Recent Projects</h3>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">4 total</span>
+</div>
+<!-- Filter Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar" id="status-filter-group">
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm transition-all bg-primary-container/20 text-primary font-semibold" data-filter="all" type="button">
+          All
+        </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm transition-all bg-surface-container text-on-surface-variant" data-filter="ready" type="button">
+          Ready (2)
+        </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm transition-all bg-surface-container text-on-surface-variant" data-filter="processing" type="button">
+          Processing (1)
+        </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-code-sm text-label-code-sm transition-all bg-surface-container text-on-surface-variant" data-filter="draft" type="button">
+          Drafts (1)
+        </button>
+</div>
+</div>
+<!-- Project List Feed -->
+<div class="flex flex-col gap-space-md" id="projects-container">
+<!-- Project 1: Japan Summer Memories (Ready) -->
+<article class="project-card flex flex-col rounded-xl bg-surface-container overflow-hidden shadow-lg transition-transform active:scale-[0.99]" data-status="ready">
+<div class="relative w-full h-44 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Dynamic vertical vlog still of a night street in Shibuya Tokyo crowded with pedestrians under glowing purple and neon red billboards, rain reflection highlights, cinematic film grain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaaYaKiC8sgJHXRWuCf2hU64fvmaMC1Kqcfy5vxCLy6gLogllWtiDbBJxZWl2d5ed9sHSznOj5WrZLOisfS-rHfseFuj96k4YHB2rkD_o04hRnDPkLeLiJ-32Isg51wEkPxK1HWLwiAbkIx1b-I1LE4yhm-fgt0XiL8eIcFtSX-HY_1JE1N5Z2PdpRjY2lfGOi-TjMfHOwvkXRjMelRyNivBEIDeTcwlB-mbGY8x8HqzIw_500NVyD1g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<!-- Badges overlay -->
+<div class="absolute top-space-sm left-space-sm flex items-center gap-1.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-primary font-badge-sm text-badge-sm px-2 py-0.5 rounded-full uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              9:16 Reel
+            </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">
+              0:42s
+            </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-emerald-950/80 text-emerald-300 font-label-code-sm text-label-code-sm px-2 py-0.5 rounded-full flex items-center gap-1 backdrop-blur-md">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Ready
+            </span>
+</div>
+<!-- Bottom music badge inside preview -->
+<div class="absolute bottom-space-xs left-space-sm right-space-sm flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5 bg-surface-dim/80 backdrop-blur-md px-2 py-1 rounded-md min-w-0">
+<span class="material-symbols-outlined text-secondary text-[16px]">graphic_eq</span>
+<span class="font-label-code-sm text-label-code-sm truncate">Tokyo Drift Lo-Fi · 118 BPM</span>
+</div>
+<span class="font-badge-sm text-badge-sm bg-primary/20 text-primary px-1.5 py-0.5 rounded">24 Cuts</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Japan Summer Memories</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Category: Travel &amp; Exploration · Edited 2h ago</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1 bg-primary text-on-primary py-2 px-space-sm rounded-lg font-title-md text-body-md font-semibold transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Preview</span>
+</button>
+<button aria-label="Duplicate project" class="min-w-[40px] h-10 flex items-center justify-center bg-surface-container-high text-on-surface rounded-lg hover:bg-surface-bright transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button aria-label="Export video" class="min-w-[40px] h-10 flex items-center justify-center bg-surface-container-high text-on-surface rounded-lg hover:bg-surface-bright transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Project 2: College Farewell 2026 (Processing State) -->
+<article class="project-card flex flex-col rounded-xl bg-surface-container overflow-hidden shadow-lg" data-status="processing">
+<div class="relative w-full h-40 bg-surface-container-lowest">
+<img class="w-full h-full object-cover filter brightness-75" data-alt="Auditorium farewell party with college students cheering under stage spotlight beams, confetti floating in air, vibrant purple and golden illumination, candid joy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUfF9q6xyD_4AowlQb00_MYr2IUHPz06diSZb5XlHruqoff9u39h8hizS0iXMVMucUyf_PPdsdMXqTBdOEAvHbE6EvP0l1zKKzaedmdoQtwnU8ju2rh7_xAHmqxsKeN2dq7Se7m00zsW0UaJYVK5ATXZQc5P89jnnP0wVeYeFZyWV4hKXP-g6RkXIUSCGynIcdXcatD_lqybEpF02JGuXMVEEI3y_f7vxqBB64R9XjXbiQTpd9XXJXvg"/>
+<div class="absolute inset-0 bg-surface-dim/60 backdrop-blur-[2px]"></div>
+<!-- Pulsing Live Tag -->
+<div class="absolute top-space-sm left-space-sm flex items-center gap-1.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-badge-sm text-badge-sm px-2 py-0.5 rounded-full uppercase">
+              16:9 Landscape
+            </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">
+              1:15s
+            </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-secondary-container/80 text-secondary-fixed font-label-code-sm text-label-code-sm px-2 py-0.5 rounded-full flex items-center gap-1 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Processing
+            </span>
+</div>
+<!-- Center render indicator -->
+<div class="absolute inset-0 flex flex-col items-center justify-center p-space-md text-center">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mb-1 text-primary">
+<span class="material-symbols-outlined text-[24px] animate-spin">sync</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-primary font-bold">Step 4 of 6 · Rendering edit 64%</span>
+<div class="w-48 h-1.5 bg-surface-container-highest rounded-full overflow-hidden mt-1.5">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 64%"></div>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">College Farewell 2026</h4>
+<span class="font-label-code-sm text-label-code-sm text-secondary font-mono">~1m remaining</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">School / Memories · AI generating audio waveform alignment &amp; dynamic transitions.</p>
+</div>
+</article>
+<!-- Project 3: Mom & Dad Anniversary (Draft) -->
+<article class="project-card flex flex-col rounded-xl bg-surface-container overflow-hidden shadow-lg" data-status="draft">
+<div class="relative w-full h-36 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Warm intimate family dinner celebration with senior couple smiling over candlelight and celebration cake, cozy natural ambient lighting, deep rich shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfp_VremsciVJcHClLmWjcV2fCI9mOsUNAS4wMXrph7KD8ZPOLxw6xmemOJD0O2jth6A1WBl0S9RJbFx_-CLju0WgnlgilvOo7o8XXaV3zINJ5g0kkGxiFoM-gPbEEgOGv_umQsmGpsG0e77HaKZKiW87aJb5Fo-kfZM8TxQss2EEn0FQEVWvY8Rdsm0xTuADMhpj0IgAKrPictwUSpMez7mnBBAqqISgmEWpZLMrf5OJL83QnLVZh2w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-1.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-badge-sm text-badge-sm px-2 py-0.5 rounded-full uppercase">
+              1:1 Square
+            </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-surface-container-high/90 text-on-surface-variant font-label-code-sm text-label-code-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">edit_note</span>
+              Draft
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Mom &amp; Dad Anniversary</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Family · 8 clips queued · Unsaved beat marker</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-1 bg-surface-container-high text-primary hover:bg-surface-bright py-2 rounded-lg font-title-md text-body-md font-semibold transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Continue editing</span>
+</button>
+</div>
+</article>
+<!-- Project 4: Weekend with Friends (Ready) -->
+<article class="project-card flex flex-col rounded-xl bg-surface-container overflow-hidden shadow-lg" data-status="ready">
+<div class="relative w-full h-36 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Friends group riding bicycles along coastal highway during sunset, golden backlighting, carefree smiles, cinematic documentary style color correction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlfw3lX8PymC_vJi9nflhyTxBNuJv1FV5hyjkl1mjdYLOsslm4vNyH4Azf58JJzek2RadPSVnKw5OfC_1e0N_Cisgta3F-3xaE-05LT5dGQ5oFcHsDMpC1NCK2tVNwCItAunXYtSRs-QbQn7EHxyc2cVvpHWG82LToEeqGQXe2i50-4uGdNRhqR1YLuNVearDVmmjXtM4if2tGuWA6ceYro-jOZR5Vqs3HCMYyoYC81v7y2uwblqy7Qw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-1.5">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-primary font-badge-sm text-badge-sm px-2 py-0.5 rounded-full uppercase">
+              9:16 Story
+            </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-code-sm text-label-code-sm px-1.5 py-0.5 rounded">
+              0:28s
+            </span>
+</div>
+<div class="absolute top-space-sm right-space-sm">
+<span class="bg-emerald-950/80 text-emerald-300 font-label-code-sm text-label-code-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Ready
+            </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Weekend with Friends</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Friends / Outing · Synced to 'Summer Haze'</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1 bg-primary text-on-primary py-2 px-space-sm rounded-lg font-title-md text-body-md font-semibold transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Preview</span>
+</button>
+<button aria-label="Duplicate project" class="min-w-[40px] h-10 flex items-center justify-center bg-surface-container-high text-on-surface rounded-lg hover:bg-surface-bright transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button aria-label="Export video" class="min-w-[40px] h-10 flex items-center justify-center bg-surface-container-high text-on-surface rounded-lg hover:bg-surface-bright transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Storage & Quota Vault Banner -->
+<section class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">cloud_sync</span>
+<span class="font-title-md text-body-md text-on-surface font-bold">Cloud Media Vault</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">3.4 GB of 10 GB</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-gradient-to-r from-tertiary to-primary rounded-full" style="width: 34%"></div>
+</div>
+<div class="flex items-center justify-between mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Private encrypted storage</span>
+<span class="font-badge-sm text-badge-sm text-primary uppercase cursor-pointer hover:underline">Manage Vault</span>
+</div>
+</section>
+<!-- Demo Disclaimer Badge -->
+<footer class="flex items-center justify-center gap-1.5 py-space-xs text-on-surface-variant/70">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span class="font-label-code-sm text-label-code-sm tracking-tight text-center">BeatCut Studio preview sandbox · All tracks royalty-free</span>
+</footer>
+<!-- Micro-Wizard Bottom Sheet (Interactive Modal) -->
+<div class="fixed inset-0 z-50 bg-surface-dim/80 backdrop-blur-md hidden flex-col justify-end transition-opacity" id="wizard-sheet">
+<div class="bg-surface-container-high rounded-t-2xl p-space-lg flex flex-col gap-space-md max-h-[751px] overflow-y-auto shadow-2xl">
+<div class="w-12 h-1.5 bg-surface-variant rounded-full mx-auto mb-space-xs"></div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-sm text-badge-sm text-secondary uppercase font-bold tracking-wider">New Project</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Setup Your Beat Edit</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="close-wizard" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Step Indicator -->
+<div class="flex items-center gap-2">
+<div class="flex-1 h-1 bg-primary rounded-full"></div>
+<div class="flex-1 h-1 bg-surface-variant rounded-full"></div>
+<div class="flex-1 h-1 bg-surface-variant rounded-full"></div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-title-md text-body-md text-on-surface font-semibold">1. Choose Canvas Format</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="format-choice flex flex-col items-center gap-1 p-space-sm rounded-xl bg-primary-container/20 text-primary" type="button">
+<span class="material-symbols-outlined text-[24px]">stay_current_portrait</span>
+<span class="font-label-code-sm text-label-code-sm font-semibold">9:16 Reel</span>
+</button>
+<button class="format-choice flex flex-col items-center gap-1 p-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[24px]">crop_square</span>
+<span class="font-label-code-sm text-label-code-sm">1:1 Post</span>
+</button>
+<button class="format-choice flex flex-col items-center gap-1 p-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[24px]">stay_current_landscape</span>
+<span class="font-label-code-sm text-label-code-sm">16:9 Cinema</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-title-md text-body-md text-on-surface font-semibold">2. Upload Clips</span>
+<div class="border-2 border-dashed border-outline-variant/40 rounded-xl p-space-lg flex flex-col items-center justify-center gap-space-xs bg-surface-container/50 cursor-pointer hover:bg-surface-container">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<span class="font-title-md text-body-md text-on-surface font-medium">Select 3 to 15 video clips</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MP4, MOV, ProRes up to 4K</span>
+</div>
+</div>
+<button class="w-full py-3.5 bg-primary text-on-primary rounded-xl font-title-md text-title-md font-bold flex items-center justify-center gap-space-xs shadow-lg shadow-primary-container/20 active:scale-95 transition-transform mt-space-xs" id="start-generating-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_videocam</span>
+<span>Auto-Generate Cuts</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function initDashboard() {
+    // Filter functionality
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-primary-container/20', 'text-primary', 'font-semibold');
+          t.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        tab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        tab.classList.add('bg-primary-container/20', 'text-primary', 'font-semibold');
+
+        const filter = tab.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-status') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Wizard modal open/close
+    const wizardTrigger = document.getElementById('create-modal-trigger');
+    const wizardSheet = document.getElementById('wizard-sheet');
+    const closeWizard = document.getElementById('close-wizard');
+    const exploreStylesBtn = document.getElementById('explore-styles-scroll');
+
+    if (wizardTrigger && wizardSheet && closeWizard) {
+      wizardTrigger.addEventListener('click', () => {
+        wizardSheet.classList.remove('hidden');
+        wizardSheet.classList.add('flex');
+      });
+
+      closeWizard.addEventListener('click', () => {
+        wizardSheet.classList.add('hidden');
+        wizardSheet.classList.remove('flex');
+      });
+
+      wizardSheet.addEventListener('click', (e) => {
+        if (e.target === wizardSheet) {
+          wizardSheet.classList.add('hidden');
+          wizardSheet.classList.remove('flex');
+        }
+      });
+    }
+
+    if (exploreStylesBtn) {
+      exploreStylesBtn.addEventListener('click', () => {
+        const carousel = document.querySelector('.overflow-x-auto');
+        if (carousel) {
+          carousel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    }
+
+    // Format selection within modal
+    const formatButtons = document.querySelectorAll('.format-choice');
+    formatButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        formatButtons.forEach(b => {
+          b.classList.remove('bg-primary-container/20', 'text-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container/20', 'text-primary');
+      });
+    });
+
+    // Dummy completion feedback on click
+    const startBtn = document.getElementById('start-generating-btn');
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        startBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Analyzing Transients...</span>';
+        setTimeout(() => {
+          wizardSheet.classList.add('hidden');
+          wizardSheet.classList.remove('flex');
+          startBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">auto_videocam</span><span>Auto-Generate Cuts</span>';
+        }, 1200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 transition-colors active:scale-95 text-primary" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="create" href="#"><div class="relative flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[20px] text-tertiary">auto_videocam</span></div><span class="font-label-code-sm text-label-code-sm mt-0.5">Create</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">video_library</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-16 text-on-surface-variant transition-colors hover:text-on-surface active:scale-95" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-code-sm text-label-code-sm mt-0.5">Settings</span></a></div></nav></body></html>
